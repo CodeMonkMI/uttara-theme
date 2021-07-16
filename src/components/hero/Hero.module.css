@@ -1,0 +1,8 @@
+.root {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 670px;
+  display: flex;
+  align-items: center;
+}
