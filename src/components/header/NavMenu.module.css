@@ -1,0 +1,26 @@
+.list {
+  display: flex;
+  list-style: none;
+}
+.item {
+  margin-right: 10px;
+  color: #120f2d;
+  transition: color 0.5s;
+  font-size: 20px;
+}
+.item:last-child {
+  margin-right: 0;
+}
+
+.link {
+  text-decoration: none;
+  color: inherit;
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+  padding: 10px 10px;
+}
+
+.item:hover {
+  color: #2878eb;
+}
