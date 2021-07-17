@@ -24,3 +24,17 @@ img {
   width: 80%;
   margin: auto;
 }
+
+/* css for sliders */
+.slick-dots li {
+  color: #b5b4b4;
+  font-weight: bold;
+  transition: color 0.3s;
+}
+.slick-dots li:hover {
+  cursor: pointer;
+}
+
+.slick-active {
+  color: #fff !important;
+}
