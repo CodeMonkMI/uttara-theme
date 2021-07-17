@@ -35,6 +35,20 @@ img {
   cursor: pointer;
 }
 
-.slick-active {
+.hero .slick-active {
   color: #fff !important;
+}
+
+/* featured course item arrows */
+.featured .slick-arrow {
+  top: -90px;
+  left: 0;
+}
+
+.featured .slick-next {
+  left: 70px;
+}
+
+.featured .slick-arrow::before {
+  font-size: 50px !important;
 }

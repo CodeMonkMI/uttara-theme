@@ -1,0 +1,113 @@
+.root {
+  box-sizing: border-box;
+  padding: 8px 20px;
+}
+.wrapper {
+  background: #fff;
+  border-radius: 6px;
+  padding-bottom: 15px;
+  overflow: hidden;
+}
+
+.top {
+  height: 185px;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.content {
+  padding: 10px 20px;
+}
+
+/* list */
+
+.top {
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.list {
+  list-style: none;
+  display: flex;
+}
+.item {
+  color: #fff;
+  padding: 5px 10px;
+  margin-right: 5px;
+  border-radius: 4px;
+}
+
+.item:last-child {
+  margin-right: 0;
+}
+.item:nth-child(2n + 1) {
+  background: #eeb72d;
+}
+.item:nth-child(2n) {
+  background: #55bf9b;
+}
+
+/* list */
+
+.title {
+  color: #120f2d;
+  font-size: 20px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+.timeStars {
+  margin-top: 10px;
+  border-top: 1px dashed #c7c7c7;
+  padding-top: 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+.stars {
+  list-style: none;
+  display: flex;
+}
+
+.star {
+  color: #f14d32;
+  font-size: 23px;
+  margin-right: 5px;
+}
+
+.star:last-child {
+  margin-right: 0;
+}
+
+.priceDetails {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.button {
+  padding: 10px 20px;
+  text-decoration: none;
+  color: #120f2d;
+  display: inline-block;
+  border-radius: 2px;
+  color: #2878eb;
+  transform-style: all 0.3s;
+  box-shadow: 0 0 0 3px #2878eb;
+  transition: all 0.5s ease-in-out;
+}
+
+.button:hover {
+  background: #2878eb;
+  color: #fff;
+}
+.price {
+  background: #f8c8ce;
+  color: #f04f5e;
+  padding: 10px 20px;
+  border-radius: 30px;
+  font-size: 17px;
+  letter-spacing: 3px;
+  font-weight: bold;
+}

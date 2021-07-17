@@ -49,7 +49,7 @@ const Hero = () => {
 
   return (
     <div
-      className={style.root}
+      className={style.root + ' hero'}
       style={{ backgroundImage: `url(${BackgroundImage})` }}
     >
       <div className='container'>
