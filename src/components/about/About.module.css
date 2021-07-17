@@ -1,0 +1,9 @@
+.root {
+  padding-top: 70px;
+  padding-bottom: 70px;
+}
+
+.wrapper {
+  display: flex;
+  align-items: center;
+}

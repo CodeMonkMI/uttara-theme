@@ -1,0 +1,35 @@
+.root {
+  flex-basis: 50%;
+  box-sizing: border-box;
+  padding-right: 20px;
+}
+
+.subTitle {
+  color: #f14d5d;
+  font-size: 27px;
+  margin-bottom: 25px;
+}
+.title {
+  font-size: 45px;
+  color: #120f2d;
+  font-weight: bold;
+  line-height: 63px;
+  margin-bottom: 20px;
+}
+
+.text {
+  color: #120f2d;
+  line-height: 30px;
+  font-size: 19px;
+  font-family: 'Poppins', sans-serif;
+  margin-bottom: 25px;
+}
+
+.button {
+  text-decoration: none;
+  color: white;
+  background: #2878eb;
+  padding: 13px 25px;
+  display: inline-block;
+  border-radius: 4px;
+}

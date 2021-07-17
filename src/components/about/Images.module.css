@@ -1,0 +1,35 @@
+.root {
+  flex-basis: 50%;
+}
+
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 20px;
+}
+
+.imageWrapper {
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.imageWrapper img {
+  transition: transform 0.4s;
+}
+
+.imageWrapper:first-child() {
+  opacity: 0.5;
+}
+
+.first {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+.first .imageWrapper:first-child {
+  margin-bottom: 20px;
+}
+
+.imageWrapper:hover img {
+  transform: scale(1.1);
+}
