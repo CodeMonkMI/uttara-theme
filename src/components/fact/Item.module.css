@@ -1,0 +1,23 @@
+.root {
+  flex-basis: 25%;
+  padding: 10px;
+  box-sizing: border-box;
+}
+
+.wrapper {
+  background: #fff;
+  padding: 20px 0;
+  border: 1px solid #ececec;
+  border-radius: 4px;
+}
+
+.number {
+  color: #2878eb;
+  font-size: 45px;
+}
+.value {
+  color: #120f2d;
+  font-size: 20px;
+  margin-top: 10px;
+  font-family: 'Poppins', sans-serif;
+}
