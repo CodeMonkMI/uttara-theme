@@ -46,9 +46,9 @@ img {
 }
 
 .featured .slick-next {
-  left: 70px;
+  left: 50px;
 }
 
 .featured .slick-arrow::before {
-  font-size: 50px !important;
+  font-size: 40px !important;
 }
