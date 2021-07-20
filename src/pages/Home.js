@@ -1,4 +1,5 @@
 import About from 'components/about/About';
+import Campus from 'components/campus/Campus';
 import AllFeaturedCourses from 'components/course/featured/AllFeaturedCourses';
 import Facility from 'components/facility/Facility';
 import Fact from 'components/fact/Fact';
@@ -15,6 +16,7 @@ const Home = () => {
       <About />
       <AllFeaturedCourses />
       <Fact />
+      <Campus />
     </div>
   );
 };
