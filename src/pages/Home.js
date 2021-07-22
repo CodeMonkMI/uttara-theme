@@ -1,5 +1,6 @@
 import About from 'components/about/About';
 import Campus from 'components/campus/Campus';
+import HomeCourses from 'components/course/Courses/HomeCourses';
 import AllFeaturedCourses from 'components/course/featured/AllFeaturedCourses';
 import Facility from 'components/facility/Facility';
 import Fact from 'components/fact/Fact';
@@ -19,6 +20,7 @@ const Home = () => {
       <Fact />
       <Campus />
       <Why />
+      <HomeCourses />
     </div>
   );
 };

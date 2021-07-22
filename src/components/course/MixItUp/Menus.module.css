@@ -1,0 +1,21 @@
+.root {
+  padding: 10px 0;
+  margin-bottom: 30px;
+}
+
+.list {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+}
+
+.item {
+  color: #fff;
+  font-size: 18px;
+  margin-right: 20px;
+  cursor: pointer;
+}
+
+.active {
+  color: #000;
+}
