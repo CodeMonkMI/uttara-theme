@@ -1,0 +1,42 @@
+.root {
+  text-align: center;
+  box-sizing: border-box;
+  padding: 0 10px;
+  position: relative;
+}
+
+.imageWrapper {
+  width: 90px;
+  height: 90px;
+  position: absolute;
+  left: 41%;
+  top: -40px;
+}
+
+.container {
+  box-shadow: 0 0 10px 1px #dedede;
+  padding: 60px 42px;
+  padding-bottom: 30px;
+  margin-top: 40px;
+}
+
+.text {
+  line-height: 28px;
+  font-size: 16px;
+  color: #120f2d;
+  font-family: 'Poppins', sans-serif;
+  margin-bottom: 10px;
+  margin-top: 20px;
+}
+.name {
+  font-size: 21px;
+  font-weight: bold;
+  font-family: 'Poppins', sans-serif;
+  color: #120f2d;
+  margin-bottom: 6px;
+}
+.quote {
+  width: 30px;
+  height: 30px;
+  margin: 15px auto;
+}
