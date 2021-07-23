@@ -1,7 +1,4 @@
-import '@fortawesome/fontawesome-free/scss/brands.scss';
-import '@fortawesome/fontawesome-free/scss/fontawesome.scss';
-import '@fortawesome/fontawesome-free/scss/regular.scss';
-import '@fortawesome/fontawesome-free/scss/solid.scss';
+import '@fortawesome/fontawesome-free/css/all.css';
 import Bg from 'images/campus-bg.png';
 import React from 'react';
 import style from './Campus.module.css';
