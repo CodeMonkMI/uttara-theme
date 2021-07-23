@@ -21,6 +21,16 @@
   margin-top: 40px;
 }
 
+.container::after {
+  content: '';
+  position: absolute;
+  left: 10px;
+  bottom: 40px;
+  border-left: 0px solid transparent;
+  border-right: 71px solid transparent;
+  border-bottom: 57px solid #2878eb;
+}
+
 .text {
   line-height: 28px;
   font-size: 16px;
