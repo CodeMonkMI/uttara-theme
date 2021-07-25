@@ -1,0 +1,30 @@
+.root {
+  padding: 100px 0;
+  background: #f6f6f6;
+}
+.subTitle {
+  font-size: 20px;
+  color: #f14d5d;
+  margin-bottom: 10px;
+}
+.title {
+  color: #120f2d;
+  font-size: 45px;
+  margin-bottom: 55px;
+}
+
+.title,
+.subTitle {
+  text-align: center;
+}
+
+.all {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.all > div {
+  flex-basis: 50%;
+  padding: 0 10px;
+  box-sizing: border-box;
+}

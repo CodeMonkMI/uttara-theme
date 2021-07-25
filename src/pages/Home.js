@@ -1,4 +1,5 @@
 import About from 'components/about/About';
+import Blogs from 'components/blog/Blogs';
 import Campus from 'components/campus/Campus';
 import HomeCourses from 'components/course/Courses/HomeCourses';
 import AllFeaturedCourses from 'components/course/featured/AllFeaturedCourses';
@@ -25,6 +26,7 @@ const Home = () => {
       <HomeCourses />
       <Testimonials />
       <Instructor />
+      <Blogs />
     </div>
   );
 };
