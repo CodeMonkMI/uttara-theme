@@ -8,7 +8,7 @@ const Footer = () => {
     <div
       className={style.root}
       style={{
-        background: `linear-gradient(90deg , #3274DF , #DE34C3) , url(${bg})`,
+        background: `linear-gradient(90deg, rgb(50 116 223 / 70%), rgb(222 52 195 / 70%)) , url(${bg})`,
       }}
     >
       <Top />
