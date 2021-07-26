@@ -1,0 +1,19 @@
+.root {
+  display: flex;
+  padding-top: 100px;
+  padding-bottom: 50px;
+}
+
+.root > div {
+  flex-basis: 20%;
+  box-sizing: border-box;
+  padding: 0 5px;
+}
+
+.root > div:first-child {
+  flex-basis: 30%;
+}
+
+.root > div:last-child {
+  flex-basis: 30%;
+}

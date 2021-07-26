@@ -5,6 +5,7 @@ import HomeCourses from 'components/course/Courses/HomeCourses';
 import AllFeaturedCourses from 'components/course/featured/AllFeaturedCourses';
 import Facility from 'components/facility/Facility';
 import Fact from 'components/fact/Fact';
+import Footer from 'components/footer/Footer';
 import Header from 'components/header/Header';
 import Hero from 'components/hero/Hero';
 import Instructor from 'components/instructor/Instructor';
@@ -27,6 +28,7 @@ const Home = () => {
       <Testimonials />
       <Instructor />
       <Blogs />
+      <Footer />
     </div>
   );
 };

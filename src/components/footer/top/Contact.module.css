@@ -1,0 +1,55 @@
+.root {
+  color: #fff;
+}
+.title {
+  color: #fff;
+  font-size: 26px;
+  margin-bottom: 30px;
+}
+.adList {
+  list-style: none;
+  display: flex;
+  font-family: 'Poppins', sans-serif;
+  margin-bottom: 20px;
+  align-items: flex-start;
+}
+
+.adIcon {
+  width: 25px;
+  overflow: hidden;
+  font-size: 17px;
+  margin-top: 10px;
+}
+
+.adValue {
+  flex: 1;
+  font-size: 18px;
+  line-height: 37px;
+}
+
+.links {
+  display: flex;
+  list-style: none;
+  margin-top: 30px;
+}
+
+.sItem {
+  margin-right: 15px;
+  font-size: 18px;
+}
+.sItem:last-child {
+  margin-right: 0;
+}
+.sLink {
+  padding: 10px 12px;
+  border-radius: 5px;
+  box-shadow: 0 0 0px 1px #fff;
+  color: #fff;
+  transition: all 0.3s ease-in;
+  display: inline-block;
+}
+
+.sLink:hover {
+  background: #007bff;
+  box-shadow: none;
+}
