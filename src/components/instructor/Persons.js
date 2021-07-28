@@ -59,7 +59,7 @@ const data = [
   },
   {
     id: shortid(),
-    name: 'Hexandra',
+    name: 'Hexahedral',
     position: 'Teaches Communication',
     image: img5,
     links: {
