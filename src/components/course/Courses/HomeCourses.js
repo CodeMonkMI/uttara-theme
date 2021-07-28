@@ -1,11 +1,9 @@
-import img2 from 'images/course/2.png';
-import img3 from 'images/course/3.png';
-import img1 from 'images/course/4.png';
+import data from 'data/Courses';
 import Bg from 'images/course/background.png';
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import { generate as shortid } from 'shortid';
 import MixItUp from '../MixItUp/MixItUp';
-import style from './HomeCourse.module.css';
+import style from './HomeCourses.module.css';
 const HomeCourses = () => {
   const menus = [
     {
@@ -29,118 +27,10 @@ const HomeCourses = () => {
       slug: 'fl',
     },
   ];
-  const courses = [
-    {
-      image: img1,
-      categories: ['Art', 'Design'],
-      title: 'Music Theory Learn student New & Fundamentals',
-      time: '12 Week',
-      stars: [1, 2, 3, 4],
-      price: '250.00',
-      url: '/a',
-      catSlug: 'dsa',
-    },
-    {
-      image: img2,
-      categories: ['Data', 'Design'],
-      title: 'Fundamentals Design Theory Learn New student',
-      time: '12 Week',
-      stars: [1, 2, 3, 4],
-      price: '150.00',
-      url: '/a',
-      catSlug: 'dsa',
-    },
-    {
-      image: img3,
-      categories: ['Ui/Ux', 'Design'],
-      title: 'Development Theory Learn student in New Batch',
-      time: '12 Week',
-      stars: [1, 2, 3, 4],
-      price: '350.00',
-      url: '/a',
-      catSlug: 'dsa',
-    },
-    {
-      image: img1,
-      categories: ['Art', 'Design'],
-      title: 'Music Theory Learn student New & Fundamentals',
-      time: '12 Week',
-      stars: [1, 2, 3, 4],
-      price: '250.00',
-      url: '/a',
-      catSlug: 'cs',
-    },
-    {
-      image: img2,
-      categories: ['Data', 'Design'],
-      title: 'Fundamentals Design Theory Learn New student',
-      time: '12 Week',
-      stars: [1, 2, 3, 4],
-      price: '150.00',
-      url: '/a',
-      catSlug: 'code',
-    },
-    {
-      image: img3,
-      categories: ['Ui/Ux', 'Design'],
-      title: 'Development Theory Learn student in New Batch',
-      time: '12 Week',
-      stars: [1, 2, 3, 4],
-      price: '350.00',
-      url: '/a',
-      catSlug: 'cs',
-    },
-    {
-      image: img2,
-      categories: ['Data', 'Design'],
-      title: 'Fundamentals Design Theory Learn New student',
-      time: '12 Week',
-      stars: [1, 2, 3, 4],
-      price: '150.00',
-      url: '/a',
-      catSlug: 'cs',
-    },
-    {
-      image: img3,
-      categories: ['Ui/Ux', 'Design'],
-      title: 'Development Theory Learn student in New Batch',
-      time: '12 Week',
-      stars: [1, 2, 3, 4],
-      price: '350.00',
-      url: '/a',
-      catSlug: 'cs',
-    },
-    {
-      image: img2,
-      categories: ['Data', 'Design'],
-      title: 'Fundamentals Design Theory Learn New student',
-      time: '12 Week',
-      stars: [1, 2, 3, 4],
-      price: '150.00',
-      url: '/a',
-      catSlug: 'fl',
-    },
-    {
-      image: img3,
-      categories: ['Ui/Ux', 'Design'],
-      title: 'Development Theory Learn student in New Batch',
-      time: '12 Week',
-      stars: [1, 2, 3, 4],
-      price: '350.00',
-      url: '/a',
-      catSlug: 'fl',
-    },
-    {
-      image: img3,
-      categories: ['Ui/Ux', 'Design'],
-      title: 'Development Theory Learn student in New Batch',
-      time: '12 Week',
-      stars: [1, 2, 3, 4],
-      price: '350.00',
-      url: '/a',
-      catSlug: 'fl',
-    },
-  ];
+
+  const [courses, setCourses] = useState([]);
+
+  useEffect(() => setCourses(data), []);
 
   return (
     <div

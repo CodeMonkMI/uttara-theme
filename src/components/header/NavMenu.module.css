@@ -7,6 +7,7 @@
   color: #120f2d;
   transition: color 0.5s;
   font-size: 20px;
+  font-family: 'Poppins', sans-serif;
 }
 .item:last-child {
   margin-right: 0;
