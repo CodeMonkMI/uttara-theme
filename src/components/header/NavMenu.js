@@ -1,5 +1,7 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import style from './NavMenu.module.css';
+
 const NavMenu = () => {
   const menuList = [
     {
@@ -9,8 +11,8 @@ const NavMenu = () => {
     },
     {
       id: '2',
-      text: 'Course',
-      url: '/course',
+      text: 'Courses',
+      url: '/courses',
     },
     {
       id: '3',
@@ -41,9 +43,9 @@ const NavMenu = () => {
 
 const Item = ({ text, url }) => (
   <li className={style.item}>
-    <a href={url} className={style.link}>
+    <Link to={url} className={style.link}>
       {text}
-    </a>
+    </Link>
   </li>
 );
 
