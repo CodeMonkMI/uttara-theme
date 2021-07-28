@@ -7,7 +7,7 @@ const NavMenu = () => {
     {
       id: '1',
       text: 'Home',
-      url: '/home',
+      url: '/',
     },
     {
       id: '2',
