@@ -95,7 +95,7 @@ const Persons = ({ isHome }) => {
   }, [isHome]);
 
   return (
-    <div className={style.root}>
+    <div className={`${style.root} ${isHome ? style.isHome : ''}`}>
       {persons.map((person) => (
         <Person
           key={person.id}

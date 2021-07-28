@@ -16,8 +16,8 @@ const NavMenu = () => {
     },
     {
       id: '3',
-      text: 'Instructor',
-      url: '/instructor',
+      text: 'Instructors',
+      url: '/instructors',
     },
     {
       id: '4',
