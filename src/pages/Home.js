@@ -24,7 +24,7 @@ const Home = () => {
       <HomeCourses />
       <Testimonials />
       <Instructor />
-      <Blogs />
+      <Blogs isHome />
     </>
   );
 };

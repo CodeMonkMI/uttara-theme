@@ -1,5 +1,6 @@
 import Footer from 'components/footer/Footer';
 import Header from 'components/header/Header';
+import Blogs from 'pages/Blogs';
 import Courses from 'pages/Courses';
 import Home from 'pages/Home';
 import Instructors from 'pages/Instructors';
@@ -19,6 +20,9 @@ const App = () => {
         </Route>
         <Route path='/instructors'>
           <Instructors />
+        </Route>
+        <Route path='/blog'>
+          <Blogs />
         </Route>
       </Switch>
       <Footer />

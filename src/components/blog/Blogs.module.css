@@ -28,3 +28,46 @@
   padding: 0 10px;
   box-sizing: border-box;
 }
+
+/* pagination */
+.pagination {
+  padding-top: 60px;
+  padding-bottom: 30px;
+}
+
+.list {
+  display: flex;
+}
+
+.item {
+  background: #120f2d;
+  color: #fff;
+  padding: 12px 18px;
+  list-style: none;
+  margin-right: 15px;
+  border-radius: 4px;
+  transition: all 0.4s ease;
+}
+
+.item:last-child {
+  margin-right: 0;
+}
+
+.item:hover {
+  cursor: pointer;
+  background: #2878eb;
+}
+
+.active {
+  background: #2878eb;
+}
+
+.list button {
+  font-size: inherit;
+  border: none;
+  outline: none;
+}
+.list button:disabled {
+  cursor: not-allowed;
+  background: grey;
+}
