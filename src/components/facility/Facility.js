@@ -62,16 +62,10 @@ const Facility = () => {
   var settings = {
     infinite: true,
     speed: 500,
-    slidesToShow: 1,
+    slidesToShow: 4,
     slidesToScroll: 1,
     arrows: false,
     responsive: [
-      {
-        breakpoint: 460,
-        settings: {
-          slidesToShow: 2,
-        },
-      },
       {
         breakpoint: 776,
         settings: {
@@ -79,9 +73,15 @@ const Facility = () => {
         },
       },
       {
-        breakpoint: 992,
+        breakpoint: 460,
         settings: {
-          slidesToShow: 4,
+          slidesToShow: 2,
+        },
+      },
+      {
+        breakpoint: 360,
+        settings: {
+          slidesToShow: 1,
         },
       },
     ],
