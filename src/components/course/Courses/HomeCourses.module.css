@@ -21,3 +21,18 @@
   font-size: 45px;
   margin-bottom: 50px;
 }
+
+@media screen and (max-width: 776px) {
+  .title {
+    font-size: 37px;
+  }
+  .subTitle {
+    font-size: 19px;
+  }
+}
+
+@media screen and (max-width: 460px) {
+  .title {
+    margin-bottom: 20px;
+  }
+}

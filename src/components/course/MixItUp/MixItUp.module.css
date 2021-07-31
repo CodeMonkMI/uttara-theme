@@ -6,3 +6,14 @@
 .wrapper > div {
   flex-basis: 33%;
 }
+
+@media screen and (max-width: 992px) {
+  .wrapper > div {
+    flex-basis: 50%;
+  }
+}
+@media screen and (max-width: 460px) {
+  .wrapper > div {
+    flex-basis: 100%;
+  }
+}
