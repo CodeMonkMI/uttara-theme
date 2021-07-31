@@ -20,7 +20,7 @@
   }
 }
 
-@media screen and (max-width: 992px) {
+@media screen and (max-width: 460px) {
   .isHome > div {
     flex-basis: 100%;
   }
