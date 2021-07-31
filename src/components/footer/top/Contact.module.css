@@ -53,3 +53,20 @@
   background: #007bff;
   box-shadow: none;
 }
+
+@media screen and (max-width: 460px) {
+  .adList {
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  .adIcon {
+    display: inline-block;
+  }
+  .adValue {
+    flex: 0 0 auto;
+    margin-left: 8px;
+  }
+  .links {
+    justify-content: center;
+  }
+}

@@ -22,3 +22,9 @@
 .imageContainer img {
   transform: scale(1.2);
 }
+
+@media screen and (max-width: 992px) {
+  .imageContainer {
+    height: 180px;
+  }
+}
