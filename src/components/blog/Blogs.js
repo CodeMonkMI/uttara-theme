@@ -51,7 +51,7 @@ const Blogs = ({ isHome }) => {
           </>
         )}
 
-        <div className={style.all}>
+        <div className={style.all + ` ${isHome ? style.isHome : ''}`}>
           {blogs.map((blog) => (
             <Blog
               key={blog.id}

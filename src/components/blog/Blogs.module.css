@@ -71,3 +71,26 @@
   cursor: not-allowed;
   background: grey;
 }
+
+@media screen and (max-width: 776px) {
+  .subTitle {
+    font-size: 18px;
+  }
+  .title {
+    font-size: 37px;
+  }
+}
+@media screen and (max-width: 460px) {
+  .title {
+    font-size: 32px;
+  }
+
+  .isHome > div {
+    flex-basis: 100%;
+    margin-bottom: 30px;
+  }
+
+  .isHome > div:last-child {
+    margin-bottom: 0;
+  }
+}
