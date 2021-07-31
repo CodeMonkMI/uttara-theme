@@ -37,3 +37,9 @@
   font-size: 25px;
   color: #2878eb;
 }
+
+@media screen and (max-width: 460px) {
+  .subTitle {
+    width: 100%;
+  }
+}
