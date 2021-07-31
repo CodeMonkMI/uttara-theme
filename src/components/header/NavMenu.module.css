@@ -29,3 +29,16 @@
 .menuIcon {
   display: none;
 }
+@media screen and (max-width: 776px) {
+  .item {
+    font-size: 18px;
+  }
+}
+@media screen and (max-width: 776px) {
+  .menuIcon {
+    display: block;
+  }
+  .list {
+    display: none;
+  }
+}
