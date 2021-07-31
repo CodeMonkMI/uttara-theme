@@ -33,3 +33,16 @@
   display: inline-block;
   border-radius: 4px;
 }
+
+@media screen and (max-width: 776px) {
+  .root {
+    order: 2;
+    margin-top: 20px;
+  }
+}
+@media screen and (max-width: 460px) {
+  .title {
+    font-size: 32px;
+    line-height: 45px;
+  }
+}

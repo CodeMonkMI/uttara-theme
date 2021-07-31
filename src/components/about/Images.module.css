@@ -33,3 +33,9 @@
 .imageWrapper:hover img {
   transform: scale(1.1);
 }
+@media screen and (max-width: 776px) {
+  .root {
+    order: 1;
+    width: 100%;
+  }
+}
