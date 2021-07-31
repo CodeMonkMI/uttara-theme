@@ -20,3 +20,9 @@
   font-weight: bold;
   margin-bottom: 50px;
 }
+
+@media screen and (max-width: 420px) {
+  .title {
+    font-size: 30px;
+  }
+}
