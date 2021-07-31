@@ -53,3 +53,10 @@ img {
 .featured .slick-arrow::before {
   font-size: 40px !important;
 }
+
+/* responsive  */
+@media screen and (max-width: 1280px) {
+  .container {
+    width: 85%;
+  }
+}

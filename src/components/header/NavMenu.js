@@ -37,6 +37,9 @@ const NavMenu = () => {
           <Item key={item.id} text={item.text} url={item.url} />
         ))}
       </ul>
+      <div className={style.menuIcon}>
+        <i class='fas fa-bars'></i>
+      </div>
     </div>
   );
 };
