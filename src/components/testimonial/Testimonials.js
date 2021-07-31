@@ -12,6 +12,14 @@ const Testimonials = () => {
     slidesToShow: 2,
     slidesToScroll: 1,
     arrows: false,
+    responsive: [
+      {
+        breakpoint: 776,
+        settings: {
+          slidesToShow: 1,
+        },
+      },
+    ],
   };
   const list = [
     {
