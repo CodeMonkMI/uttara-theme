@@ -62,9 +62,29 @@ const Facility = () => {
   var settings = {
     infinite: true,
     speed: 500,
-    slidesToShow: 4,
+    slidesToShow: 1,
     slidesToScroll: 1,
     arrows: false,
+    responsive: [
+      {
+        breakpoint: 460,
+        settings: {
+          slidesToShow: 2,
+        },
+      },
+      {
+        breakpoint: 776,
+        settings: {
+          slidesToShow: 3,
+        },
+      },
+      {
+        breakpoint: 992,
+        settings: {
+          slidesToShow: 4,
+        },
+      },
+    ],
   };
 
   return (
