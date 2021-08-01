@@ -37,6 +37,8 @@
 
 .list {
   display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
 .item {
@@ -78,6 +80,9 @@
   }
   .title {
     font-size: 37px;
+  }
+  .all > div {
+    flex-basis: 100%;
   }
 }
 @media screen and (max-width: 460px) {

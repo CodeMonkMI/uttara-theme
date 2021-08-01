@@ -1,5 +1,6 @@
 .wrapper {
   font-family: 'Poppins', sans-serif;
+  margin-bottom: 30px;
 }
 .wrapper:hover img {
   transform: scale(1.2) rotate(5deg);
