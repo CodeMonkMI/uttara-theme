@@ -63,3 +63,15 @@
   background: #120f2d;
   box-shadow: none;
 }
+
+@media screen and (max-width: 776px) {
+  .root {
+    flex-basis: 50%;
+  }
+}
+
+@media screen and (max-width: 460px) {
+  .root {
+    flex-basis: 100%;
+  }
+}
