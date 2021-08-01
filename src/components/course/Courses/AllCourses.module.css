@@ -10,6 +10,7 @@
 .list {
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
 }
 .pagination {
   padding-top: 30px;
