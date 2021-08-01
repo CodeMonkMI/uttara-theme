@@ -20,7 +20,9 @@ const CourseBox = ({ image, categories, title, time, stars, price, url }) => {
             <span>{time}</span>
             <ul className={style.stars}>
               {stars.map((star) => (
-                <li className={style.star}>&#10032;</li>
+                <li className={style.star} key={Math.random()}>
+                  &#10032;
+                </li>
               ))}
             </ul>
           </div>

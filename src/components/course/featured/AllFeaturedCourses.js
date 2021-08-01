@@ -3,11 +3,13 @@ import img3 from 'images/course/3.png';
 import img1 from 'images/course/4.png';
 import React from 'react';
 import Slider from 'react-slick';
+import shortid from 'shortid';
 import CourseBox from '../shared/CourseBox';
 import style from './AllFeaturedCourses.module.css';
 const AllFeaturedCourses = () => {
   const list = [
     {
+      id: shortid(),
       image: img1,
       categories: ['Art', 'Design'],
       title: 'Music Theory Learn student New & Fundamentals',
@@ -17,6 +19,7 @@ const AllFeaturedCourses = () => {
       url: '/a',
     },
     {
+      id: shortid(),
       image: img2,
       categories: ['Data', 'Design'],
       title: 'Fundamentals Design Theory Learn New student',
@@ -26,6 +29,7 @@ const AllFeaturedCourses = () => {
       url: '/a',
     },
     {
+      id: shortid(),
       image: img3,
       categories: ['Ui/Ux', 'Design'],
       title: 'Development Theory Learn student in New Batch',
@@ -35,6 +39,7 @@ const AllFeaturedCourses = () => {
       url: '/a',
     },
     {
+      id: shortid(),
       image: img1,
       categories: ['Art', 'Design'],
       title: 'Music Theory Learn student New & Fundamentals',
@@ -44,6 +49,7 @@ const AllFeaturedCourses = () => {
       url: '/a',
     },
     {
+      id: shortid(),
       image: img2,
       categories: ['Data', 'Design'],
       title: 'Fundamentals Design Theory Learn New student',
@@ -53,6 +59,7 @@ const AllFeaturedCourses = () => {
       url: '/a',
     },
     {
+      id: shortid(),
       image: img3,
       categories: ['Ui/Ux', 'Design'],
       title: 'Development Theory Learn student in New Batch',
@@ -98,7 +105,7 @@ const AllFeaturedCourses = () => {
         <Slider {...settings}>
           {list.map((item) => (
             <CourseBox
-              key={item.title}
+              key={item.id}
               image={item.image}
               categories={item.categories}
               title={item.title}

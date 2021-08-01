@@ -1,9 +1,11 @@
 import img2 from 'images/course/2.png';
 import img3 from 'images/course/3.png';
 import img1 from 'images/course/4.png';
+import shortid from 'shortid';
 
 const courses = [
   {
+    id: shortid(),
     image: img1,
     categories: ['Art', 'Design'],
     title: 'Music Theory Learn student New & Fundamentals',
@@ -14,6 +16,7 @@ const courses = [
     catSlug: 'dsa',
   },
   {
+    id: shortid(),
     image: img2,
     categories: ['Data', 'Design'],
     title: 'Fundamentals Design Theory Learn New student',
@@ -24,6 +27,7 @@ const courses = [
     catSlug: 'dsa',
   },
   {
+    id: shortid(),
     image: img3,
     categories: ['Ui/Ux', 'Design'],
     title: 'Development Theory Learn student in New Batch',
@@ -34,6 +38,7 @@ const courses = [
     catSlug: 'dsa',
   },
   {
+    id: shortid(),
     image: img1,
     categories: ['Art', 'Design'],
     title: 'Music Theory Learn student New & Fundamentals',
@@ -44,6 +49,7 @@ const courses = [
     catSlug: 'cs',
   },
   {
+    id: shortid(),
     image: img2,
     categories: ['Data', 'Design'],
     title: 'Fundamentals Design Theory Learn New student',
@@ -54,6 +60,7 @@ const courses = [
     catSlug: 'code',
   },
   {
+    id: shortid(),
     image: img3,
     categories: ['Ui/Ux', 'Design'],
     title: 'Development Theory Learn student in New Batch',
@@ -64,6 +71,7 @@ const courses = [
     catSlug: 'cs',
   },
   {
+    id: shortid(),
     image: img2,
     categories: ['Data', 'Design'],
     title: 'Fundamentals Design Theory Learn New student',
@@ -74,6 +82,7 @@ const courses = [
     catSlug: 'cs',
   },
   {
+    id: shortid(),
     image: img3,
     categories: ['Ui/Ux', 'Design'],
     title: 'Development Theory Learn student in New Batch',
@@ -84,6 +93,7 @@ const courses = [
     catSlug: 'cs',
   },
   {
+    id: shortid(),
     image: img2,
     categories: ['Data', 'Design'],
     title: 'Fundamentals Design Theory Learn New student',
@@ -94,6 +104,7 @@ const courses = [
     catSlug: 'fl',
   },
   {
+    id: shortid(),
     image: img3,
     categories: ['Ui/Ux', 'Design'],
     title: 'Development Theory Learn student in New Batch',
@@ -104,6 +115,7 @@ const courses = [
     catSlug: 'fl',
   },
   {
+    id: shortid(),
     image: img3,
     categories: ['Ui/Ux', 'Design'],
     title: 'Development Theory Learn student in New Batch',
@@ -114,6 +126,7 @@ const courses = [
     catSlug: 'fl',
   },
   {
+    id: shortid(),
     image: img1,
     categories: ['Art', 'Design'],
     title: 'Music Theory Learn student New & Fundamentals',
@@ -124,6 +137,7 @@ const courses = [
     catSlug: 'dsa',
   },
   {
+    id: shortid(),
     image: img2,
     categories: ['Data', 'Design'],
     title: 'Fundamentals Design Theory Learn New student',
@@ -134,6 +148,7 @@ const courses = [
     catSlug: 'dsa',
   },
   {
+    id: shortid(),
     image: img3,
     categories: ['Ui/Ux', 'Design'],
     title: 'Development Theory Learn student in New Batch',
@@ -144,6 +159,7 @@ const courses = [
     catSlug: 'dsa',
   },
   {
+    id: shortid(),
     image: img1,
     categories: ['Art', 'Design'],
     title: 'Music Theory Learn student New & Fundamentals',
@@ -154,6 +170,7 @@ const courses = [
     catSlug: 'cs',
   },
   {
+    id: shortid(),
     image: img2,
     categories: ['Data', 'Design'],
     title: 'Fundamentals Design Theory Learn New student',
@@ -164,6 +181,7 @@ const courses = [
     catSlug: 'code',
   },
   {
+    id: shortid(),
     image: img3,
     categories: ['Ui/Ux', 'Design'],
     title: 'Development Theory Learn student in New Batch',
@@ -174,6 +192,7 @@ const courses = [
     catSlug: 'cs',
   },
   {
+    id: shortid(),
     image: img2,
     categories: ['Data', 'Design'],
     title: 'Fundamentals Design Theory Learn New student',
@@ -184,6 +203,7 @@ const courses = [
     catSlug: 'cs',
   },
   {
+    id: shortid(),
     image: img3,
     categories: ['Ui/Ux', 'Design'],
     title: 'Development Theory Learn student in New Batch',
@@ -194,6 +214,7 @@ const courses = [
     catSlug: 'cs',
   },
   {
+    id: shortid(),
     image: img2,
     categories: ['Data', 'Design'],
     title: 'Fundamentals Design Theory Learn New student',
@@ -204,6 +225,7 @@ const courses = [
     catSlug: 'fl',
   },
   {
+    id: shortid(),
     image: img3,
     categories: ['Ui/Ux', 'Design'],
     title: 'Development Theory Learn student in New Batch',
@@ -214,6 +236,7 @@ const courses = [
     catSlug: 'fl',
   },
   {
+    id: shortid(),
     image: img3,
     categories: ['Ui/Ux', 'Design'],
     title: 'Development Theory Learn student in New Batch',
@@ -224,6 +247,7 @@ const courses = [
     catSlug: 'fl',
   },
   {
+    id: shortid(),
     image: img1,
     categories: ['Art', 'Design'],
     title: 'Music Theory Learn student New & Fundamentals',
@@ -234,6 +258,7 @@ const courses = [
     catSlug: 'dsa',
   },
   {
+    id: shortid(),
     image: img2,
     categories: ['Data', 'Design'],
     title: 'Fundamentals Design Theory Learn New student',
@@ -244,6 +269,7 @@ const courses = [
     catSlug: 'dsa',
   },
   {
+    id: shortid(),
     image: img3,
     categories: ['Ui/Ux', 'Design'],
     title: 'Development Theory Learn student in New Batch',
@@ -254,6 +280,7 @@ const courses = [
     catSlug: 'dsa',
   },
   {
+    id: shortid(),
     image: img1,
     categories: ['Art', 'Design'],
     title: 'Music Theory Learn student New & Fundamentals',
@@ -264,6 +291,7 @@ const courses = [
     catSlug: 'cs',
   },
   {
+    id: shortid(),
     image: img2,
     categories: ['Data', 'Design'],
     title: 'Fundamentals Design Theory Learn New student',
@@ -274,6 +302,7 @@ const courses = [
     catSlug: 'code',
   },
   {
+    id: shortid(),
     image: img3,
     categories: ['Ui/Ux', 'Design'],
     title: 'Development Theory Learn student in New Batch',
@@ -284,6 +313,7 @@ const courses = [
     catSlug: 'cs',
   },
   {
+    id: shortid(),
     image: img2,
     categories: ['Data', 'Design'],
     title: 'Fundamentals Design Theory Learn New student',
@@ -294,6 +324,7 @@ const courses = [
     catSlug: 'cs',
   },
   {
+    id: shortid(),
     image: img3,
     categories: ['Ui/Ux', 'Design'],
     title: 'Development Theory Learn student in New Batch',
@@ -304,6 +335,7 @@ const courses = [
     catSlug: 'cs',
   },
   {
+    id: shortid(),
     image: img2,
     categories: ['Data', 'Design'],
     title: 'Fundamentals Design Theory Learn New student',
@@ -314,6 +346,7 @@ const courses = [
     catSlug: 'fl',
   },
   {
+    id: shortid(),
     image: img3,
     categories: ['Ui/Ux', 'Design'],
     title: 'Development Theory Learn student in New Batch',
@@ -324,6 +357,7 @@ const courses = [
     catSlug: 'fl',
   },
   {
+    id: shortid(),
     image: img3,
     categories: ['Ui/Ux', 'Design'],
     title: 'Development Theory Learn student in New Batch',

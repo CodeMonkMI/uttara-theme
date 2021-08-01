@@ -37,10 +37,6 @@ const Blogs = ({ isHome }) => {
     setPagesArray(arr);
   }, [totalPage]);
 
-  useEffect(() => {
-    console.log({ current, perPage, totalPage, pagesArray });
-  }, [current, perPage, totalPage, pagesArray]);
-
   return (
     <div className={style.root}>
       <div className='container'>

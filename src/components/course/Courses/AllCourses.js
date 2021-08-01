@@ -55,7 +55,7 @@ const AllCourses = () => {
             <button
               className={style.item}
               key={Math.random()}
-              onClick={() => setCurrent(current - 1)}
+              onClick={() => setCurrent((prevCurrent) => prevCurrent - 1)}
               disabled={current === 1}
             >
               <i className='fas fa-angle-double-left'></i>
@@ -74,7 +74,7 @@ const AllCourses = () => {
             <button
               className={style.item}
               key={Math.random()}
-              onClick={() => setCurrent(current + 1)}
+              onClick={() => setCurrent((prevCurrent) => prevCurrent + 1)}
               disabled={current === totalPage}
             >
               <i className='fas fa-angle-double-right'></i>

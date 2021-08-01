@@ -27,7 +27,7 @@ const MixItUp = ({ menus, items }) => {
         <div className={style.wrapper}>
           {courses.map((course) => (
             <CourseBox
-              key={Math.random()}
+              key={course.id}
               image={course.image}
               categories={course.categories}
               price={course.price}

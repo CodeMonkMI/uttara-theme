@@ -21,22 +21,22 @@ const Person = ({
           <ul className={style.list}>
             <li className={style.item}>
               <a href={facebook} className={style.link}>
-                <i class='fab fa-facebook'></i>
+                <i className='fab fa-facebook'></i>
               </a>
             </li>
             <li className={style.item}>
               <a href={twitter} className={style.link}>
-                <i class='fab fa-twitter'></i>
+                <i className='fab fa-twitter'></i>
               </a>
             </li>
             <li className={style.item}>
               <a href={instagram} className={style.link}>
-                <i class='fab fa-instagram'></i>
+                <i className='fab fa-instagram'></i>
               </a>
             </li>
             <li className={style.item}>
               <a href={linkedIn} className={style.link}>
-                <i class='fab fa-linkedin-in'></i>
+                <i className='fab fa-linkedin-in'></i>
               </a>
             </li>
           </ul>

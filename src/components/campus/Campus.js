@@ -18,7 +18,7 @@ const Campus = () => {
         </p>
         <div className={style.video}>
           <div className={style.icon}>
-            <i class='fas fa-play'></i>
+            <i className='fas fa-play'></i>
           </div>
         </div>
       </div>
