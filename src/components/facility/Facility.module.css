@@ -8,3 +8,10 @@
 .root:last-child {
   margin-right: 0;
 }
+
+@media screen and (max-width: 460px) {
+  .root {
+    margin-top: 60px;
+    margin-bottom: 10px;
+  }
+}

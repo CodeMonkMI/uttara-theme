@@ -9,6 +9,7 @@
 
 .list {
   display: flex;
+  flex-wrap: wrap;
 }
 .pagination {
   padding-top: 30px;
@@ -23,6 +24,8 @@
   margin-right: 15px;
   border-radius: 4px;
   transition: all 0.4s ease;
+  margin-top: 7px;
+  margin-bottom: 7px;
 }
 
 .item:last-child {
@@ -46,4 +49,22 @@
 .list button:disabled {
   cursor: not-allowed;
   background: grey;
+}
+@media screen and (max-width: 992px) {
+  .allCourses > div {
+    flex-basis: 50%;
+  }
+}
+@media screen and (max-width: 776px) {
+  .allCourses {
+    margin-top: 100px;
+  }
+}
+@media screen and (max-width: 460px) {
+  .allCourses > div {
+    flex-basis: 100%;
+  }
+  .allCourses {
+    margin-top: 60px;
+  }
 }
