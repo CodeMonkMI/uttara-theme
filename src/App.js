@@ -1,6 +1,7 @@
 import Footer from 'components/footer/Footer';
 import Header from 'components/header/Header';
 import Blogs from 'pages/Blogs';
+import Contact from 'pages/Contact';
 import Courses from 'pages/Courses';
 import Home from 'pages/Home';
 import Instructors from 'pages/Instructors';
@@ -23,6 +24,9 @@ const App = () => {
         </Route>
         <Route path='/blog'>
           <Blogs />
+        </Route>
+        <Route path='/contact-us'>
+          <Contact />
         </Route>
       </Switch>
       <Footer />

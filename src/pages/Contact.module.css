@@ -1,0 +1,46 @@
+.root {
+  padding: 100px 0;
+  font-family: 'Poppins', sans-serif;
+  background-color: #fcfaff;
+}
+.title {
+  text-align: center;
+  font-size: 44px;
+  margin-bottom: 40px;
+  color: #120f2d;
+  letter-spacing: 1px;
+}
+.wrapper {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.imageWrapper {
+  flex-basis: 45%;
+  height: 450px;
+  overflow: hidden;
+}
+.imageWrapper img {
+  object-fit: cover;
+}
+.form {
+  flex-basis: 55%;
+  box-sizing: border-box;
+  padding: 0 20px;
+}
+
+@media screen and (max-width: 776px) {
+  .form,
+  .imageWrapper {
+    flex-basis: 100%;
+  }
+
+  .imageWrapper {
+    margin-bottom: 20px;
+  }
+}
+@media screen and (max-width: 460px) {
+  .form {
+    padding: 0;
+  }
+}
