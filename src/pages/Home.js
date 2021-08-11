@@ -10,8 +10,11 @@ import Instructor from 'components/instructor/Instructor';
 import Testimonials from 'components/testimonial/Testimonials';
 import Why from 'components/why/Why';
 import React from 'react';
+import { useEffect } from 'react/cjs/react.development';
 
 const Home = () => {
+  useEffect(() => (document.title = 'Home'), []);
+
   return (
     <>
       <Hero />

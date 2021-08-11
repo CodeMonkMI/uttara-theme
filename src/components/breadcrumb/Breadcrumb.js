@@ -1,8 +1,9 @@
 import Background from 'images/breadcrumb/1.png';
-import React from 'react';
+import React, { useEffect } from 'react';
 import style from './Breadcrumb.module.css';
 
 const Breadcrumb = ({ title }) => {
+  useEffect(() => (document.title = title), [title]);
   return (
     <div
       className={style.root}
