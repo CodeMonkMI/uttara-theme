@@ -5,12 +5,7 @@
   background-size: cover !important;
   text-align: center;
 }
-.title {
-  color: #fff;
-  font-size: 45px;
-  font-weight: bold;
-  margin-bottom: 20px;
-}
+
 .subTitle {
   font-size: 19px;
   width: 70%;

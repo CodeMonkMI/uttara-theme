@@ -2,21 +2,6 @@
   padding: 100px 0;
   background: #f6f6f6;
 }
-.subTitle {
-  font-size: 20px;
-  color: #f14d5d;
-  margin-bottom: 10px;
-}
-.title {
-  color: #120f2d;
-  font-size: 45px;
-  margin-bottom: 55px;
-}
-
-.title,
-.subTitle {
-  text-align: center;
-}
 
 .all {
   display: flex;
@@ -75,21 +60,11 @@
 }
 
 @media screen and (max-width: 776px) {
-  .subTitle {
-    font-size: 18px;
-  }
-  .title {
-    font-size: 37px;
-  }
   .all > div {
     flex-basis: 100%;
   }
 }
 @media screen and (max-width: 460px) {
-  .title {
-    font-size: 32px;
-  }
-
   .isHome > div {
     flex-basis: 100%;
     margin-bottom: 30px;

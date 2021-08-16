@@ -1,3 +1,4 @@
+import { Container } from 'components/styles/Container.styled';
 import React from 'react';
 import style from './About.module.css';
 import Content from './Content';
@@ -5,12 +6,12 @@ import Images from './Images';
 const About = () => {
   return (
     <div className={style.root}>
-      <div className='container'>
+      <Container>
         <div className={style.wrapper}>
           <Content />
           <Images />
         </div>
-      </div>
+      </Container>
     </div>
   );
 };

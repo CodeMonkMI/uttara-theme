@@ -1,3 +1,5 @@
+import { Container } from 'components/styles/Container.styled';
+import { SubTitle, Title } from 'components/styles/Section.styled';
 import img2 from 'images/course/2.png';
 import img3 from 'images/course/3.png';
 import img1 from 'images/course/4.png';
@@ -99,9 +101,13 @@ const AllFeaturedCourses = () => {
   };
   return (
     <div className={style.root + ' featured'}>
-      <div className='container'>
-        <h4 className={style.subTitle}>New Courses</h4>
-        <h2 className={style.title}>Featured Courses</h2>
+      <Container>
+        <SubTitle white align='right'>
+          New Courses
+        </SubTitle>
+        <Title white align='right'>
+          Featured Courses
+        </Title>
         <Slider {...settings}>
           {list.map((item) => (
             <CourseBox
@@ -116,7 +122,7 @@ const AllFeaturedCourses = () => {
             />
           ))}
         </Slider>
-      </div>
+      </Container>
     </div>
   );
 };

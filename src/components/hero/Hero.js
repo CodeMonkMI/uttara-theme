@@ -1,3 +1,4 @@
+import { Container } from 'components/styles/Container.styled';
 import img1 from 'images/hero/1.png';
 import BackgroundImage from 'images/hero/hero-background.png';
 import React from 'react';
@@ -52,7 +53,7 @@ const Hero = () => {
       className={style.root + ' hero'}
       style={{ backgroundImage: `url(${BackgroundImage})` }}
     >
-      <div className='container'>
+      <Container>
         <Slider {...settings}>
           {sliders.map((slide) => (
             <SliderItem
@@ -66,7 +67,7 @@ const Hero = () => {
             />
           ))}
         </Slider>
-      </div>
+      </Container>
     </div>
   );
 };

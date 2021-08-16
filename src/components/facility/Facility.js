@@ -1,3 +1,4 @@
+import { Container } from 'components/styles/Container.styled';
 import img1 from 'images/facility/1.png';
 import img2 from 'images/facility/2.png';
 import img3 from 'images/facility/3.png';
@@ -89,7 +90,7 @@ const Facility = () => {
 
   return (
     <div className={style.root}>
-      <div className='container'>
+      <Container>
         <Slider {...settings}>
           {list.map((item) => (
             <Box
@@ -100,7 +101,7 @@ const Facility = () => {
             />
           ))}
         </Slider>
-      </div>
+      </Container>
     </div>
   );
 };

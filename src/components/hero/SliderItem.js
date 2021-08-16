@@ -1,3 +1,5 @@
+import { SecondaryButton } from 'components/styles/Buttons.styled';
+import { HeroSubTitle, HeroTitle } from 'components/styles/Section.styled';
 import React from 'react';
 import style from './SliderItem.module.css';
 
@@ -5,12 +7,12 @@ const SliderItem = ({ image, title, subTitle, text, button, url }) => {
   return (
     <div className={style.root}>
       <div className={style.content}>
-        <h6 className={style.subTitle}>{subTitle}</h6>
-        <h1 className={style.title}>{title}</h1>
+        <HeroSubTitle>{subTitle}</HeroSubTitle>
+        <HeroTitle className={style.title}>{title}</HeroTitle>
         <p className={style.text}>{text}</p>
-        <a href={url} className={style.button}>
+        <SecondaryButton as='a' href={url}>
           {button}
-        </a>
+        </SecondaryButton>
       </div>
       <div className={style.imageWrapper}>
         <img src={image} alt={title} className={style.image} />

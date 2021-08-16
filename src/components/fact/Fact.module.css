@@ -3,16 +3,6 @@
   padding: 100px 0;
   text-align: center;
 }
-.subTitle {
-  font-size: 20px;
-  color: #f14d5d;
-  margin-bottom: 10px;
-}
-.title {
-  color: #120f2d;
-  font-size: 45px;
-  margin-bottom: 55px;
-}
 
 .numbers {
   display: flex;

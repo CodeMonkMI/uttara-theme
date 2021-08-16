@@ -9,20 +9,6 @@
   box-sizing: border-box;
 }
 
-.subTitle {
-  color: white;
-  font-weight: 600;
-  font-size: 19px;
-  margin-bottom: 28px;
-  text-transform: uppercase;
-  letter-spacing: 2px;
-}
-.title {
-  color: #fff;
-  font-size: 60px;
-  margin-bottom: 28px;
-  line-height: 65px;
-}
 .text {
   color: #fff;
   font-size: 18px;
@@ -30,41 +16,16 @@
   text-transform: capitalize;
   margin-bottom: 25px;
 }
-.button {
-  padding: 12px 20px;
-  text-decoration: none;
-  color: #120f2d;
-  background-color: #fff;
-  display: inline-block;
-  border-radius: 3px;
-  transform-style: all 0.3s;
-}
-
-.button:hover {
-  color: #2878eb;
-}
 
 @media screen and (max-width: 1280px) {
   .imageWrapper {
     width: 40%;
   }
-  .title {
-    font-size: 50px;
-  }
 }
 
 @media screen and (max-width: 776px) {
-  .title {
-    font-size: 40px;
-    line-height: 55px;
-    margin-bottom: 10px;
-  }
   .text {
     font-size: 15px;
-  }
-  .subTitle {
-    font-size: 15px;
-    margin-bottom: 10px;
   }
 }
 @media screen and (max-width: 460px) {

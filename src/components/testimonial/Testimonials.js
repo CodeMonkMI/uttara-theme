@@ -1,3 +1,4 @@
+import { SubTitle, Title } from 'components/styles/Section.styled';
 import img from 'images/user.png';
 import React from 'react';
 import Slider from 'react-slick';
@@ -47,8 +48,8 @@ const Testimonials = () => {
   return (
     <div className={style.root}>
       <div className='container'>
-        <h4 className={style.subTitle}>Testimonials</h4>
-        <h2 className={style.title}>Student Community Feedback</h2>
+        <SubTitle align='center'>Testimonials</SubTitle>
+        <Title align='center'>Student Community Feedback</Title>
         <Slider {...settings}>
           {list.map((item) => (
             <Testimonial

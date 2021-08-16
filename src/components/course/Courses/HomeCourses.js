@@ -1,3 +1,5 @@
+import { Container } from 'components/styles/Container.styled';
+import { SubTitle, Title } from 'components/styles/Section.styled';
 import data from 'data/Courses';
 import Bg from 'images/course/background.png';
 import React, { useEffect, useState } from 'react';
@@ -39,11 +41,15 @@ const HomeCourses = () => {
         background: `linear-gradient(#3e7eecd9 , #3e7eecd9) , url(${Bg})`,
       }}
     >
-      <div className='container'>
-        <h4 className={style.subTitle}>Browse Categories</h4>
-        <h2 className={style.title}>Pick a Course to Get Started</h2>
+      <Container>
+        <SubTitle align='center' white>
+          Browse Categories
+        </SubTitle>
+        <Title align='center' white>
+          Pick a Course to Get Started
+        </Title>
         <MixItUp menus={menus} items={courses} />
-      </div>
+      </Container>
     </div>
   );
 };

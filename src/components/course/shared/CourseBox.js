@@ -1,3 +1,4 @@
+import { OutlineButton } from 'components/styles/Buttons.styled';
 import React from 'react';
 import style from './CourseBox.module.css';
 const CourseBox = ({ image, categories, title, time, stars, price, url }) => {
@@ -28,9 +29,9 @@ const CourseBox = ({ image, categories, title, time, stars, price, url }) => {
           </div>
           <div className={style.priceDetails}>
             <span className={style.price}>&#36;{parseFloat(price)}</span>
-            <a href={url} className={style.button}>
+            <OutlineButton borderSize='3' as='a' href={url}>
               Details
-            </a>
+            </OutlineButton>
           </div>
         </div>
       </div>

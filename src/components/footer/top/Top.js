@@ -1,3 +1,4 @@
+import { Container } from 'components/styles/Container.styled';
 import React from 'react';
 import shortid from 'shortid';
 import Contact from './Contact';
@@ -61,7 +62,7 @@ const Top = () => {
   ];
 
   return (
-    <div className='container'>
+    <Container>
       <div className={style.root}>
         <div>
           <Contact />
@@ -76,7 +77,7 @@ const Top = () => {
           <Gallery />
         </div>
       </div>
-    </div>
+    </Container>
   );
 };
 

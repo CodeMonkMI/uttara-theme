@@ -1,3 +1,5 @@
+import { Container } from 'components/styles/Container.styled';
+import { SubTitle, Title } from 'components/styles/Section.styled';
 import data from 'data/Blogs';
 import React, { useEffect, useState } from 'react';
 import Blog from './Blog';
@@ -39,11 +41,11 @@ const Blogs = ({ isHome }) => {
 
   return (
     <div className={style.root}>
-      <div className='container'>
+      <Container>
         {isHome && (
           <>
-            <h4 className={style.subTitle}>Latest News</h4>
-            <h2 className={style.title}>University Latest Blog</h2>
+            <SubTitle align='center'>Latest News</SubTitle>
+            <Title align='center'>University Latest Blog</Title>
           </>
         )}
 
@@ -93,7 +95,7 @@ const Blogs = ({ isHome }) => {
             </ul>
           </div>
         )}
-      </div>
+      </Container>
     </div>
   );
 };

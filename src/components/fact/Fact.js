@@ -1,3 +1,5 @@
+import { Container } from 'components/styles/Container.styled';
+import { SubTitle, Title } from 'components/styles/Section.styled';
 import React from 'react';
 import { generate as shortid } from 'shortid';
 import style from './Fact.module.css';
@@ -27,15 +29,15 @@ const Fact = () => {
   ];
   return (
     <div className={style.root}>
-      <div className='container'>
-        <h4 className={style.subTitle}>Funfact</h4>
-        <h2 className={style.title}>Strength in Numbers</h2>
+      <Container>
+        <SubTitle align='center'>Funfact</SubTitle>
+        <Title align='center'>Strength in Numbers</Title>
         <div className={style.numbers}>
           {items.map((item) => (
             <Item key={item.id} value={item.value} number={item.number} />
           ))}
         </div>
-      </div>
+      </Container>
     </div>
   );
 };

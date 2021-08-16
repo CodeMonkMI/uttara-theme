@@ -1,4 +1,5 @@
 import '@fortawesome/fontawesome-free/css/all.css';
+import { Title } from 'components/styles/Section.styled';
 import Bg from 'images/campus-bg.png';
 import React from 'react';
 import style from './Campus.module.css';
@@ -11,7 +12,9 @@ const Campus = () => {
       }}
     >
       <div className='container'>
-        <h2 className={style.title}>Watch Campus Life Video Tour</h2>
+        <Title align='center' white>
+          Watch Campus Life Video Tour
+        </Title>
         <p className={style.subTitle}>
           we believe everyone should have the to create progress through
           technology and develop the skills of tomorrow. assessments, learning
