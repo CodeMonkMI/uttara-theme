@@ -1,0 +1,14 @@
+.blog__wrapper {
+  font-family: 'Poppins', sans-serif;
+}
+.blog__wrapper:hover img {
+  transform: scale(1.2) rotate(5deg);
+}
+
+.blog_title {
+  color: #120f2d;
+}
+
+.blog__text {
+  color: #120f2d;
+}

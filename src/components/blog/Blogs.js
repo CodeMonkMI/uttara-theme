@@ -39,7 +39,7 @@ const Blogs = ({ isHome }) => {
   }, [totalPage]);
 
   return (
-    <div className='py-24 bg-gray-300'>
+    <div className='py-24 bg-gray-200'>
       <Container>
         {isHome && (
           <>
