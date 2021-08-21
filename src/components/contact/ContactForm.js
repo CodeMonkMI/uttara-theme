@@ -8,20 +8,20 @@ const ContactForm = () => {
   };
 
   return (
-    <div className={style.root}>
+    <div>
       <form className={style.form} onSubmit={submitHandler}>
-        <div className={style.nameWrapper}>
-          <div className={style.group}>
+        <div className='sm:flex flex-wrap justify-between'>
+          <div className='w-full sm:w-1/2 mx-3 box-border mb-5'>
             <input
               type='text'
-              className={style.input}
+              className='input-control'
               placeholder='First Name'
             />
           </div>
-          <div className={style.group}>
+          <div className='w-full sm:w-1/2 mx-3 box-border mb-5'>
             <input
               type='text'
-              className={style.input}
+              className='input-control'
               placeholder='Last Name'
             />
           </div>

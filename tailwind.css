@@ -21,3 +21,7 @@
 .pagination-btn-active {
   @apply bg-blue-500;
 }
+
+.input-control {
+  @apply py-4 px-3 border-2 border-gray-300 w-full box-border text-base rounded;
+}

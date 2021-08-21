@@ -1,3 +1,7 @@
+.nameWrapper {
+  display: flex;
+  flex-wrap: wrap;
+}
 .group {
   flex-basis: 50%;
   margin: 0 10px;
@@ -14,11 +18,6 @@
   font-size: 15px;
   color: #120f2d;
   border-radius: 4px;
-}
-
-.nameWrapper {
-  display: flex;
-  flex-wrap: wrap;
 }
 
 .button {
@@ -42,6 +41,4 @@
   .group {
     flex-basis: 100%;
   }
-}
-@media screen and (max-width: 360px) {
 }
