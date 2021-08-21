@@ -5,7 +5,6 @@ import Bg from 'images/course/background.png';
 import React, { useEffect, useState } from 'react';
 import { generate as shortid } from 'shortid';
 import MixItUp from '../MixItUp/MixItUp';
-import style from './HomeCourses.module.css';
 const HomeCourses = () => {
   const menus = [
     {
@@ -36,7 +35,7 @@ const HomeCourses = () => {
 
   return (
     <div
-      className={style.root}
+      className='py-24 bg-cover bg-center bg-no-repeat'
       style={{
         background: `linear-gradient(#3e7eecd9 , #3e7eecd9) , url(${Bg})`,
       }}
