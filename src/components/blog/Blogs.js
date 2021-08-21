@@ -72,11 +72,7 @@ const Blogs = ({ isHome }) => {
           <div className='pt-16 pb-8'>
             <ul className='flex flex-wrap justify-center'>
               <button
-                className={`  py-3 px-4 mr-4 rounded-md transition-all duration-500 ease-in my-2    ${
-                  current === 1
-                    ? 'bg-gray-400 cursor-not-allowed'
-                    : 'bg-black text-white cursor-pointer hover:bg-blue-500'
-                } `}
+                className='pagination-btn'
                 key={Math.random()}
                 onClick={() => setCurrent((prevCurrent) => prevCurrent - 1)}
                 disabled={current === 1}
@@ -85,8 +81,8 @@ const Blogs = ({ isHome }) => {
               </button>
               {pagesArray.map((no) => (
                 <li
-                  className={`text-white py-3 px-4 mr-4 rounded-md transition-all duration-500 ease-in my-2 cursor-pointer hover:bg-blue-500   ${
-                    current === no ? 'bg-blue-500' : 'bg-black'
+                  className={`pagination-btn   ${
+                    current === no ? 'pagination-btn-active' : ''
                   }`}
                   key={Math.random()}
                   onClick={() => setCurrent(no)}
@@ -95,11 +91,7 @@ const Blogs = ({ isHome }) => {
                 </li>
               ))}
               <button
-                className={`  py-3 px-4 mr-4 rounded-md transition-all duration-500 ease-in my-2    ${
-                  current === totalPage
-                    ? 'bg-gray-400 cursor-not-allowed'
-                    : 'bg-black text-white cursor-pointer hover:bg-blue-500'
-                } `}
+                className='pagination-btn'
                 key={Math.random()}
                 onClick={() => setCurrent((prevCurrent) => prevCurrent + 1)}
                 disabled={current === totalPage}
