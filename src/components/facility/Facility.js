@@ -7,7 +7,6 @@ import React from 'react';
 import Slider from 'react-slick';
 import { generate as shortId } from 'shortid';
 import Box from './Box';
-import style from './Facility.module.css';
 const Facility = () => {
   const list = [
     {
@@ -89,7 +88,7 @@ const Facility = () => {
   };
 
   return (
-    <div className={style.root}>
+    <div className='mt-16 mb-3 sm:my-24'>
       <Container>
         <Slider {...settings}>
           {list.map((item) => (
