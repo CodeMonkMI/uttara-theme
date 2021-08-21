@@ -1,7 +1,7 @@
+import { Container } from 'components/styles/Container.styled';
 import data from 'data/Courses';
 import React, { useEffect, useState } from 'react';
 import CourseBox from '../shared/CourseBox';
-import style from './AllCourses.module.css';
 
 const AllCourses = () => {
   const [current, setCurrent] = useState(1);
@@ -34,26 +34,31 @@ const AllCourses = () => {
   }, [totalPage]);
 
   return (
-    <div className={style.root}>
-      <div className='container'>
-        <div className={style.allCourses}>
+    <div>
+      <Container>
+        <div className='sm:flex flex-wrap mt-36'>
           {courses.map((course) => (
-            <CourseBox
-              key={course.id}
-              image={course.image}
-              categories={course.categories}
-              price={course.price}
-              stars={course.stars}
-              title={course.title}
-              time={course.time}
-              url={course.url}
-            />
+            <div className='w-full sm:w-1/2 xl:w-1/3 2xl:h-1/4' key={course.id}>
+              <CourseBox
+                image={course.image}
+                categories={course.categories}
+                price={course.price}
+                stars={course.stars}
+                title={course.title}
+                time={course.time}
+                url={course.url}
+              />
+            </div>
           ))}
         </div>
-        <div className={style.pagination}>
-          <ul className={style.list}>
+        <div className='py-8'>
+          <ul className='flex flex-wrap justify-center'>
             <button
-              className={style.item}
+              className={`  py-3 px-4 mr-4 rounded-md transition-all duration-500 ease-in my-2    ${
+                current === 1
+                  ? 'bg-gray-400 cursor-not-allowed'
+                  : 'bg-black text-white cursor-pointer hover:bg-blue-500'
+              } `}
               key={Math.random()}
               onClick={() => setCurrent((prevCurrent) => prevCurrent - 1)}
               disabled={current === 1}
@@ -62,8 +67,8 @@ const AllCourses = () => {
             </button>
             {pagesArray.map((no) => (
               <li
-                className={`${style.item} ${
-                  current === no ? style.active : ''
+                className={`text-white py-3 px-4 mr-4 rounded-md transition-all duration-500 ease-in my-2 cursor-pointer hover:bg-blue-500   ${
+                  current === no ? 'bg-blue-500' : 'bg-black'
                 }`}
                 key={Math.random()}
                 onClick={() => setCurrent(no)}
@@ -72,7 +77,11 @@ const AllCourses = () => {
               </li>
             ))}
             <button
-              className={style.item}
+              className={`  py-3 px-4 mr-4 rounded-md transition-all duration-500 ease-in my-2    ${
+                current === totalPage
+                  ? 'bg-gray-400 cursor-not-allowed'
+                  : 'bg-black text-white cursor-pointer hover:bg-blue-500'
+              } `}
               key={Math.random()}
               onClick={() => setCurrent((prevCurrent) => prevCurrent + 1)}
               disabled={current === totalPage}
@@ -81,7 +90,7 @@ const AllCourses = () => {
             </button>
           </ul>
         </div>
-      </div>
+      </Container>
     </div>
   );
 };

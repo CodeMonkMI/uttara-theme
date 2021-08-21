@@ -1,32 +1,5 @@
-.allCourses {
-  display: flex;
-  flex-wrap: wrap;
-  margin-top: 150px;
-}
-.allCourses > div {
-  flex-basis: 33%;
-}
-
-.list {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-}
-.pagination {
-  padding-top: 30px;
-  padding-bottom: 30px;
-}
-
 .item {
   background: #120f2d;
-  color: #fff;
-  padding: 12px 18px;
-  list-style: none;
-  margin-right: 15px;
-  border-radius: 4px;
-  transition: all 0.4s ease;
-  margin-top: 7px;
-  margin-bottom: 7px;
 }
 
 .item:last-child {
