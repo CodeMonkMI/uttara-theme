@@ -1,34 +1,45 @@
 import { OutlineButton } from 'components/styles/Buttons.styled';
 import React from 'react';
-import style from './CourseBox.module.css';
+import './CourseBox.css';
 const CourseBox = ({ image, categories, title, time, stars, price, url }) => {
   return (
-    <div className={style.root}>
-      <div className={style.wrapper}>
-        <div className={style.top} style={{ backgroundImage: `url(${image})` }}>
-          <ul className={style.list}>
+    <div className='box-border py-2 px-5'>
+      <div className='bg-white rounded-md pb-4 overflow-hidden'>
+        <div
+          className='h-44 bg-cover bg-no-repeat box-border p-5'
+          style={{ backgroundImage: `url(${image})` }}
+        >
+          <ul className='flex'>
             {categories.map((cat) => (
-              <li className={style.item} key={cat}>
+              <li
+                className='text-white py-1 px-3 mr-1 rounded-md courseBox__starItem'
+                key={cat}
+              >
                 {cat}
               </li>
             ))}
           </ul>
         </div>
 
-        <div className={style.content}>
-          <h1 className={style.title}>{title}</h1>
-          <div className={style.timeStars}>
+        <div className='py-3 px-5'>
+          <h1 className='courseBox_title text-xl py-3'>{title}</h1>
+          <div className='my-3 border-t border-dashed border-gray-400 pt-3 flex justify-between items-center'>
             <span>{time}</span>
-            <ul className={style.stars}>
-              {stars.map((star) => (
-                <li className={style.star} key={Math.random()}>
+            <ul className='flex '>
+              {stars.map(() => (
+                <li
+                  className='text-red-600 text-2xl mr-2 last:mr-0'
+                  key={Math.random()}
+                >
                   &#10032;
                 </li>
               ))}
             </ul>
           </div>
-          <div className={style.priceDetails}>
-            <span className={style.price}>&#36;{parseFloat(price)}</span>
+          <div className='flex items-center justify-between mt-5'>
+            <span className='bg-red-300 font-bold text-red-600 py-3 px-5 rounded-3xl text-base tracking-wide'>
+              &#36;{parseFloat(price)}
+            </span>
             <OutlineButton borderSize='3' as='a' href={url}>
               Details
             </OutlineButton>

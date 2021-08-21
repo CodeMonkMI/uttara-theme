@@ -1,0 +1,14 @@
+.courseBox__starItem:last-child {
+  margin-right: 0;
+}
+.courseBox__starItem:nth-child(2n + 1) {
+  background: #eeb72d;
+}
+.courseBox__starItem:nth-child(2n) {
+  background: #55bf9b;
+}
+
+/* list */
+.courseBox_title {
+  color: #120f2d;
+}
