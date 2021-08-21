@@ -5,7 +5,7 @@ import React from 'react';
 import Slider from 'react-slick';
 import 'slick-carousel/slick/slick-theme.css';
 import 'slick-carousel/slick/slick.css';
-import style from './Hero.module.css';
+import './Hero.css';
 import SliderItem from './SliderItem';
 const Hero = () => {
   var settings = {
@@ -50,7 +50,9 @@ const Hero = () => {
 
   return (
     <div
-      className={style.root + ' hero'}
+      className={
+        'bg-cover bg-no-repeat bg-center flex items-center  hero__root'
+      }
       style={{ backgroundImage: `url(${BackgroundImage})` }}
     >
       <Container>
