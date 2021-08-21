@@ -1,7 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import CourseBox from '../shared/CourseBox';
 import Menus from './Menus';
-import style from './MixItUp.module.css';
 
 const MixItUp = ({ menus, items }) => {
   const [currentMenu, setCurrentMenu] = useState('all');
@@ -16,18 +15,17 @@ const MixItUp = ({ menus, items }) => {
   }, [items, currentMenu]);
 
   return (
-    <div className={style.root}>
+    <div>
       <Menus
         setCurrentMenu={setCurrentMenu}
         menus={menus}
         currentMenu={currentMenu}
       />
 
-      <div className={style.container}>
-        <div className={style.wrapper}>
-          {courses.map((course) => (
+      <div className='flex flex-wrap mixItUpContainer'>
+        {courses.map((course) => (
+          <div className='w-full md:w-1/2 xl:w-1/3' key={course.id}>
             <CourseBox
-              key={course.id}
               image={course.image}
               categories={course.categories}
               price={course.price}
@@ -36,8 +34,8 @@ const MixItUp = ({ menus, items }) => {
               time={course.time}
               url={course.url}
             />
-          ))}
-        </div>
+          </div>
+        ))}
       </div>
     </div>
   );

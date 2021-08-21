@@ -3,7 +3,7 @@ import React from 'react';
 import './CourseBox.css';
 const CourseBox = ({ image, categories, title, time, stars, price, url }) => {
   return (
-    <div className='box-border py-2 px-5'>
+    <div className='box-border py-2 px-5 w-full'>
       <div className='bg-white rounded-md pb-4 overflow-hidden'>
         <div
           className='h-44 bg-cover bg-no-repeat box-border p-5'
