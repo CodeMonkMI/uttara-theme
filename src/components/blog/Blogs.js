@@ -3,7 +3,6 @@ import { SubTitle, Title } from 'components/styles/Section.styled';
 import data from 'data/Blogs';
 import React, { useEffect, useState } from 'react';
 import Blog from './Blog';
-import style from './Blogs.module.css';
 const Blogs = ({ isHome }) => {
   const [blogs, setBlogs] = useState([]);
   const [allBlogs, setAllBlogs] = useState([]);
@@ -40,7 +39,7 @@ const Blogs = ({ isHome }) => {
   }, [totalPage]);
 
   return (
-    <div className={style.root}>
+    <div className='py-24 bg-gray-300'>
       <Container>
         {isHome && (
           <>
@@ -49,34 +48,45 @@ const Blogs = ({ isHome }) => {
           </>
         )}
 
-        <div className={style.all + ` ${isHome ? style.isHome : ''}`}>
+        <div className={`sm:flex flex-wrap`}>
           {blogs.map((blog) => (
-            <Blog
+            <div
+              className={`px-3 box-border box border w-full sm:w-1/2 ${
+                isHome ? 'mb-5 last:mb-0' : ''
+              } `}
               key={blog.id}
-              title={blog.title}
-              text={blog.text}
-              image={blog.image}
-              postedBy={blog.postedBy}
-              date={blog.date}
-              url={blog.url}
-            />
+            >
+              <Blog
+                title={blog.title}
+                text={blog.text}
+                image={blog.image}
+                postedBy={blog.postedBy}
+                date={blog.date}
+                url={blog.url}
+              />
+            </div>
           ))}
         </div>
+
         {!isHome && (
-          <div className={style.pagination}>
-            <ul className={style.list}>
+          <div className='pt-16 pb-8'>
+            <ul className='flex flex-wrap justify-center'>
               <button
-                className={style.item}
+                className={`  py-3 px-4 mr-4 rounded-md transition-all duration-500 ease-in my-2    ${
+                  current === 1
+                    ? 'bg-gray-400 cursor-not-allowed'
+                    : 'bg-black text-white cursor-pointer hover:bg-blue-500'
+                } `}
                 key={Math.random()}
-                onClick={() => setCurrent(current - 1)}
+                onClick={() => setCurrent((prevCurrent) => prevCurrent - 1)}
                 disabled={current === 1}
               >
                 <i className='fas fa-angle-double-left'></i>
               </button>
               {pagesArray.map((no) => (
                 <li
-                  className={`${style.item} ${
-                    current === no ? style.active : ''
+                  className={`text-white py-3 px-4 mr-4 rounded-md transition-all duration-500 ease-in my-2 cursor-pointer hover:bg-blue-500   ${
+                    current === no ? 'bg-blue-500' : 'bg-black'
                   }`}
                   key={Math.random()}
                   onClick={() => setCurrent(no)}
@@ -85,9 +95,13 @@ const Blogs = ({ isHome }) => {
                 </li>
               ))}
               <button
-                className={style.item}
+                className={`  py-3 px-4 mr-4 rounded-md transition-all duration-500 ease-in my-2    ${
+                  current === totalPage
+                    ? 'bg-gray-400 cursor-not-allowed'
+                    : 'bg-black text-white cursor-pointer hover:bg-blue-500'
+                } `}
                 key={Math.random()}
-                onClick={() => setCurrent(current + 1)}
+                onClick={() => setCurrent((prevCurrent) => prevCurrent + 1)}
                 disabled={current === totalPage}
               >
                 <i className='fas fa-angle-double-right'></i>
