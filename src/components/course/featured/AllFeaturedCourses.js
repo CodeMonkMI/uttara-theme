@@ -7,7 +7,7 @@ import React from 'react';
 import Slider from 'react-slick';
 import shortid from 'shortid';
 import CourseBox from '../shared/CourseBox';
-import style from './AllFeaturedCourses.module.css';
+import './AllFeaturedCourses.css';
 const AllFeaturedCourses = () => {
   const list = [
     {
@@ -100,7 +100,7 @@ const AllFeaturedCourses = () => {
     ],
   };
   return (
-    <div className={style.root + ' featured'}>
+    <div className={'py-16  allFeaturedCourses__root'}>
       <Container>
         <SubTitle white align='right'>
           New Courses

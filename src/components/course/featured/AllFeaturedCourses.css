@@ -1,0 +1,17 @@
+.allFeaturedCourses__root {
+  background: #12102d;
+}
+
+/* featured course item arrows */
+.allFeaturedCourses__root .slick-arrow {
+  top: -90px;
+  left: 0;
+}
+
+.allFeaturedCourses__root .slick-next {
+  left: 50px;
+}
+
+.allFeaturedCourses__root .slick-arrow::before {
+  font-size: 40px !important;
+}
