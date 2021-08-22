@@ -1,16 +1,21 @@
 import React from 'react';
-import style from './MenuList.module.css';
+import { Link } from 'react-router-dom';
+import SectionTitle from '../SectionTitle';
+import './MenuList.css';
 
 const MenuList = ({ title, items }) => {
   return (
-    <div className={style.root}>
-      <h2 className={style.title}>{title}</h2>
-      <ul className={style.list}>
+    <div>
+      <SectionTitle title={title} />
+      <ul className='menuList__list'>
         {items.map((item) => (
-          <li className={style.item} key={item.id}>
-            <a href={item.url} className={style.link}>
+          <li
+            className='mb-5 text-base text-white transition-all duration-500 last:mb-0'
+            key={item.id}
+          >
+            <Link to={item.url} className='hover:text-black'>
               {item.value}
-            </a>
+            </Link>
           </li>
         ))}
       </ul>

@@ -1,6 +1,7 @@
 import React from 'react';
 import shortid from 'shortid';
-import style from './Contact.module.css';
+import SectionTitle from '../SectionTitle';
+import './Contact.css';
 const Contact = () => {
   const addressItems = [
     {
@@ -43,10 +44,10 @@ const Contact = () => {
   ];
 
   return (
-    <div className={style.root}>
-      <div className={style.wrapper}>
-        <h4 className={style.title}>Contact Us</h4>
-        <div className={style.details}>
+    <div className='text-white'>
+      <div>
+        <SectionTitle title='Contact Us' />
+        <div>
           {addressItems.map((item) => (
             <AddressItem
               key={item.id}
@@ -55,7 +56,7 @@ const Contact = () => {
             />
           ))}
         </div>
-        <ul className={style.links}>
+        <ul className='flex justify-center mt-8'>
           {socialLinks.map((item) => (
             <SocialIcon key={item.id} url={item.url} iconClass={item.icon} />
           ))}
@@ -66,17 +67,22 @@ const Contact = () => {
 };
 
 const AddressItem = ({ iconClass, value }) => (
-  <ul className={style.adList}>
-    <li className={style.adIcon}>
+  <ul className='flex mt-5 items-start justify-center flex-wrap contact__adList'>
+    <li className='w-6 overflow-hidden text-base mt-3 inline-block'>
       <i className={iconClass}></i>
     </li>
-    <li className={style.adValue}>{value}</li>
+    <li className='flex-none ml-2 sm:ml-0 sm:flex-1 text-base leading-9 '>
+      {value}
+    </li>
   </ul>
 );
 
 const SocialIcon = ({ url, iconClass }) => (
-  <li className={style.sItem}>
-    <a href={url} className={style.sLink}>
+  <li className='mr-4 text-xl last:mr-0'>
+    <a
+      href={url}
+      className='py-2 px-3 rounded-md text-white transition-all ease-in duration-300 inline-block shadow-lg hover:bg-blue-500 hover:shadow-none '
+    >
       <i className={iconClass}></i>
     </a>
   </li>

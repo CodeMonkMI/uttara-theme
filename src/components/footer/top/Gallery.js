@@ -3,7 +3,7 @@ import img3 from 'images/course/3.png';
 import { default as img1, default as img4 } from 'images/course/4.png';
 import React from 'react';
 import shortid from 'shortid';
-import style from './Gallery.module.css';
+import SectionTitle from '../SectionTitle';
 const Gallery = () => {
   const images = [
     {
@@ -25,13 +25,17 @@ const Gallery = () => {
   ];
 
   return (
-    <div className={style.root}>
-      <h2 className={style.title}>Gallery</h2>
-      <div className={style.images}>
+    <div>
+      <SectionTitle title='Gallery' />
+      <div className='flex flex-wrap'>
         {images.map((item) => (
-          <div className={style.imgWrapper} key={item.id}>
-            <div className={style.imageContainer}>
-              <img src={item.image} alt='Gallery' />
+          <div className='w-1/2 box-border overflow-hidden p-2' key={item.id}>
+            <div className='overflow-hidden h-24 lg:h-44'>
+              <img
+                src={item.image}
+                alt='Gallery'
+                className='transform scale-125'
+              />
             </div>
           </div>
         ))}

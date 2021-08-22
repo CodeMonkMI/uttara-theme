@@ -4,7 +4,7 @@ import shortid from 'shortid';
 import Contact from './Contact';
 import Gallery from './Gallery';
 import MenuList from './MenuList';
-import style from './Top.module.css';
+const divClassNames = 'box-border px-1 text-center sm:text-left';
 const Top = () => {
   const menu1 = [
     {
@@ -63,17 +63,17 @@ const Top = () => {
 
   return (
     <Container>
-      <div className={style.root}>
-        <div>
+      <div className='flex pt-24 pb-12 flex-wrap justify-between'>
+        <div className={`${divClassNames} mb-10 lg:w-1/5`}>
           <Contact />
         </div>
-        <div>
+        <div className={`${divClassNames}`}>
           <MenuList title='Categories' items={menu1} />
         </div>
-        <div>
+        <div className={`${divClassNames}`}>
           <MenuList title='Uttara' items={menu2} />
         </div>
-        <div>
+        <div className={`${divClassNames} lg:w-1/3`}>
           <Gallery />
         </div>
       </div>
