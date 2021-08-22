@@ -2,7 +2,6 @@ import { Container } from 'components/styles/Container.styled';
 import { SubTitle, Title } from 'components/styles/Section.styled';
 import React from 'react';
 import { generate as shortid } from 'shortid';
-import style from './Fact.module.css';
 import Item from './Item';
 const Fact = () => {
   const items = [
@@ -28,11 +27,11 @@ const Fact = () => {
     },
   ];
   return (
-    <div className={style.root}>
+    <div className='bg-gray-300 py-24 text-center'>
       <Container>
         <SubTitle align='center'>Funfact</SubTitle>
         <Title align='center'>Strength in Numbers</Title>
-        <div className={style.numbers}>
+        <div className='flex flex-wrap'>
           {items.map((item) => (
             <Item key={item.id} value={item.value} number={item.number} />
           ))}
