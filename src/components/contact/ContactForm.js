@@ -1,5 +1,4 @@
 import React from 'react';
-import style from './ContactForm.module.css';
 
 const ContactForm = () => {
   const submitHandler = (event) => {
@@ -9,16 +8,16 @@ const ContactForm = () => {
 
   return (
     <div>
-      <form className={style.form} onSubmit={submitHandler}>
-        <div className='sm:flex flex-wrap justify-between'>
-          <div className='w-full sm:w-1/2 mx-3 box-border mb-5'>
+      <form onSubmit={submitHandler}>
+        <div className='sm:flex box-border'>
+          <div className='w-full sm:w-1/2  sm:mr-3 box-border mb-5'>
             <input
               type='text'
               className='input-control'
               placeholder='First Name'
             />
           </div>
-          <div className='w-full sm:w-1/2 mx-3 box-border mb-5'>
+          <div className='w-full sm:w-1/2 sm:ml-3 box-border mb-5'>
             <input
               type='text'
               className='input-control'
@@ -27,19 +26,22 @@ const ContactForm = () => {
           </div>
         </div>
 
-        <div className={style.group}>
-          <input type='email' className={style.input} placeholder='Email' />
+        <div className='w-full'>
+          <input type='email' className='input-control' placeholder='Email' />
         </div>
 
-        <div className={style.group}>
+        <div className='w-full mt-3 mb-4'>
           <textarea
             cols='30'
             rows='10'
-            className={style.input}
+            className='input-control'
             placeholder='Message'
           ></textarea>
         </div>
-        <button type='submit' className={style.button}>
+        <button
+          type='submit'
+          className='text-white py-3 px-4 text-base bg-blue-500 rounded-md ml-1 transition-all duration-500 ease-in-out'
+        >
           Send Message
         </button>
       </form>
