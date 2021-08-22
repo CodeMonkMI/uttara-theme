@@ -1,16 +1,17 @@
 import { Container } from 'components/styles/Container.styled';
 import logo from 'images/logo.png';
 import React from 'react';
-import style from './BottomFooter.module.css';
+import './BottomFooter.css';
+
 const BottomFooter = () => {
   return (
-    <div className={style.root}>
+    <div className='mt-8 border-t border-black py-5'>
       <Container>
-        <div className={style.wrapper}>
-          <div className={style.logo}>
-            <img src={logo} alt='Logo' className={style.image} />
+        <div className='flex justify-between sm:justify-between items-center flex-wrap'>
+          <div className='bottomFooter__logo mb-5 sm:mb-0'>
+            <img src={logo} alt='Logo' />
           </div>
-          <p className={style.text}>© 2021 MaanTheme. All Rights Reserved.</p>
+          <p className='text-white'>© 2021 MaanTheme. All Rights Reserved.</p>
         </div>
       </Container>
     </div>
