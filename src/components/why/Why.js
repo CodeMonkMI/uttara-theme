@@ -2,10 +2,9 @@ import { Container } from 'components/styles/Container.styled';
 import { SubTitle, Title } from 'components/styles/Section.styled';
 import React from 'react';
 import Items from './Items';
-import style from './Why.module.css';
 const Why = () => {
   return (
-    <div className={style.root}>
+    <div className='py-24'>
       <Container>
         <SubTitle align='center'>Why Choose Us</SubTitle>
         <Title align='center'>Why study with us?</Title>

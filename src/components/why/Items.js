@@ -7,7 +7,6 @@ import img6 from 'images/why/6.png';
 import React from 'react';
 import { generate as shortid } from 'shortid';
 import Item from './Item';
-import style from './Items.module.css';
 const Items = () => {
   const items = [
     {
@@ -54,15 +53,16 @@ const Items = () => {
     },
   ];
   return (
-    <div className={style.root}>
+    <div className='flex flex-wrap'>
       {items.map((item) => (
-        <Item
-          key={item.id}
-          text={item.text}
-          icon={item.icon}
-          title={item.title}
-          url={item.url}
-        />
+        <div className='w-full sm:w-1/2 md:w-1/3' key={item.id}>
+          <Item
+            text={item.text}
+            icon={item.icon}
+            title={item.title}
+            url={item.url}
+          />
+        </div>
       ))}
     </div>
   );

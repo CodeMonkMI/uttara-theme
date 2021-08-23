@@ -1,7 +1,6 @@
 import QuoteImg from 'images/quote.png';
 import React from 'react';
 import './Testimonial.css';
-import style from './Testimonial.module.css';
 const Testimonial = ({ image, text, name, post }) => {
   return (
     <div className='text-center box-border px-3 relative pb-10'>
@@ -19,7 +18,7 @@ const Testimonial = ({ image, text, name, post }) => {
           <h4 className='text-xl font-bold text-black mb-2 testimonial__text'>
             {name}
           </h4>
-          <p className={style.post}>{post}</p>
+          <p>{post}</p>
         </div>
       </div>
     </div>
