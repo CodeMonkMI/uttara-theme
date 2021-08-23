@@ -25,3 +25,7 @@
 .input-control {
   @apply py-4 px-3 border-2 border-gray-300 w-full box-border text-base rounded;
 }
+
+.font-family-poppins {
+  font-family: 'Poppins', sans-serif;
+}

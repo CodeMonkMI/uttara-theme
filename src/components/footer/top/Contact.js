@@ -1,7 +1,6 @@
 import React from 'react';
 import shortid from 'shortid';
 import SectionTitle from '../SectionTitle';
-import './Contact.css';
 const Contact = () => {
   const addressItems = [
     {
@@ -67,7 +66,7 @@ const Contact = () => {
 };
 
 const AddressItem = ({ iconClass, value }) => (
-  <ul className='flex mt-5 items-start justify-center flex-wrap contact__adList'>
+  <ul className='flex mt-5 items-start justify-center flex-wrap font-family-poppins'>
     <li className='w-6 overflow-hidden text-base mt-3 inline-block'>
       <i className={iconClass}></i>
     </li>

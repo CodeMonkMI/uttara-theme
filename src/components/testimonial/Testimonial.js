@@ -9,13 +9,13 @@ const Testimonial = ({ image, text, name, post }) => {
           <img src={image} alt={name} />
         </div>
         <div className='border-t border-gray-300 pt-16 pb-8 px-11 testimonial__container'>
-          <p className='leading-7 text-base text-black mb-3 mt-5 testimonial__text '>
+          <p className='leading-7 text-base text-black mb-3 mt-5 font-family-poppins '>
             {text}
           </p>
           <div className='w-8 h-8 my-4'>
             <img src={QuoteImg} alt='' />
           </div>
-          <h4 className='text-xl font-bold text-black mb-2 testimonial__text'>
+          <h4 className='text-xl font-bold text-black mb-2 font-family-poppins'>
             {name}
           </h4>
           <p>{post}</p>

@@ -7,8 +7,3 @@
 .courseBox__starItem:nth-child(2n) {
   background: #55bf9b;
 }
-
-/* list */
-.courseBox_title {
-  color: #120f2d;
-}

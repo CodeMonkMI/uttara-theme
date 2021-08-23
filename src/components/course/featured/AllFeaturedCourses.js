@@ -100,7 +100,7 @@ const AllFeaturedCourses = () => {
     ],
   };
   return (
-    <div className={'py-16  allFeaturedCourses__root'}>
+    <div className={'py-16  allFeaturedCourses__root bg-black'}>
       <Container>
         <SubTitle white align='right'>
           New Courses

@@ -3,8 +3,8 @@ import React from 'react';
 import './CourseBox.css';
 const CourseBox = ({ image, categories, title, time, stars, price, url }) => {
   return (
-    <div className='box-border py-2 px-5 w-full'>
-      <div className='bg-white rounded-md pb-4 overflow-hidden'>
+    <div className='box-border py-2 px-5 w-full '>
+      <div className='bg-white rounded-md pb-4 shadow-md overflow-hidden'>
         <div
           className='h-44 bg-cover bg-no-repeat box-border p-5'
           style={{ backgroundImage: `url(${image})` }}
@@ -22,7 +22,7 @@ const CourseBox = ({ image, categories, title, time, stars, price, url }) => {
         </div>
 
         <div className='py-3 px-5'>
-          <h1 className='courseBox_title text-xl py-3'>{title}</h1>
+          <h1 className='text-black text-xl py-3'>{title}</h1>
           <div className='my-3 border-t border-dashed border-gray-400 pt-3 flex justify-between items-center'>
             <span>{time}</span>
             <ul className='flex '>
