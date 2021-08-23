@@ -1,24 +1,25 @@
 import Breadcrumb from 'components/breadcrumb/Breadcrumb';
 import ContactForm from 'components/contact/ContactForm';
+import { Container } from 'components/styles/Container.styled';
+import { Title } from 'components/styles/Section.styled';
 import Img1 from 'images/contact-page.png';
 import React from 'react';
-import style from './Contact.module.css';
 const Contact = () => {
   return (
     <div>
       <Breadcrumb title='Contact' />
-      <div className={style.root}>
-        <div className='container'>
-          <h2 className={style.title}>Get In Touch</h2>
-          <div className={style.wrapper}>
-            <div className={style.imageWrapper}>
-              <img src={Img1} alt='' />
+      <div className={`py-24 bg-gray-200`}>
+        <Container>
+          <Title align='center'>Get In Touch</Title>
+          <div className='sm:flex flex-wrap items-center'>
+            <div className='mb-5 sm:mb-0 sm:w-5/12 h-96 overflow-hidden'>
+              <img src={Img1} alt='' className='object-contain transform' />
             </div>
-            <div className={style.form}>
+            <div className='sm:w-7/12 box-border sm:px-5'>
               <ContactForm />
             </div>
           </div>
-        </div>
+        </Container>
       </div>
     </div>
   );
