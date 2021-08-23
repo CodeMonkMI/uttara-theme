@@ -1,8 +1,0 @@
-.root {
-  padding: 20px 0;
-}
-@media screen and (max-width: 1280px) {
-  .wrapper {
-    width: 120px;
-  }
-}

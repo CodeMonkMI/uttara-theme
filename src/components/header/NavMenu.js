@@ -1,6 +1,5 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import style from './NavMenu.module.css';
 
 const NavMenu = () => {
   const menuList = [
@@ -31,13 +30,13 @@ const NavMenu = () => {
     },
   ];
   return (
-    <div className={style.root}>
-      <ul className={style.list}>
+    <div>
+      <ul className='hidden md:flex'>
         {menuList.map((item) => (
           <Item key={item.id} text={item.text} url={item.url} />
         ))}
       </ul>
-      <div className={style.menuIcon}>
+      <div className='md:hidden'>
         <i className='fas fa-bars'></i>
       </div>
     </div>
@@ -45,8 +44,11 @@ const NavMenu = () => {
 };
 
 const Item = ({ text, url }) => (
-  <li className={style.item}>
-    <Link to={url} className={style.link}>
+  <li className='mr-3 text-black transition-colors duration-500 text-base md:text-xl font-family-poppins last:mr-0'>
+    <Link
+      to={url}
+      className='text-black inline-block w-full h-full p-3 hover:text-blue-500'
+    >
       {text}
     </Link>
   </li>
