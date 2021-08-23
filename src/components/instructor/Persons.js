@@ -7,7 +7,6 @@ import img6 from 'images/instructor/6.png';
 import React, { useEffect, useState } from 'react';
 import shortid from 'shortid';
 import Person from './Person';
-import style from './Persons.module.css';
 const data = [
   {
     id: shortid(),
@@ -95,18 +94,22 @@ const Persons = ({ isHome }) => {
   }, [isHome]);
 
   return (
-    <div className={`${style.root} ${isHome ? style.isHome : ''}`}>
+    <div className='flex flex-wrap'>
       {persons.map((person) => (
-        <Person
+        <div
+          className={`w-full sm:w-1/2 ${isHome ? '  md:w-1/4' : 'md:w-1/3'} `}
           key={person.id}
-          name={person.name}
-          image={person.image}
-          position={person.position}
-          facebook={person?.links?.facebook}
-          twitter={person?.links?.twitter}
-          instagram={person?.links?.instagram}
-          linkedIn={person?.links?.linkedIn}
-        />
+        >
+          <Person
+            name={person.name}
+            image={person.image}
+            position={person.position}
+            facebook={person?.links?.facebook}
+            twitter={person?.links?.twitter}
+            instagram={person?.links?.instagram}
+            linkedIn={person?.links?.linkedIn}
+          />
+        </div>
       ))}
     </div>
   );
