@@ -1,10 +1,10 @@
+import { Container } from 'components/styles/Container.styled';
 import { SubTitle, Title } from 'components/styles/Section.styled';
 import img from 'images/user.png';
 import React from 'react';
 import Slider from 'react-slick';
 import shortid from 'shortid';
 import Testimonial from './Testimonial';
-import style from './Testimonials.module.css';
 const Testimonials = () => {
   const settings = {
     dots: true,
@@ -46,8 +46,8 @@ const Testimonials = () => {
     },
   ];
   return (
-    <div className={style.root}>
-      <div className='container'>
+    <div className='py-24'>
+      <Container>
         <SubTitle align='center'>Testimonials</SubTitle>
         <Title align='center'>Student Community Feedback</Title>
         <Slider {...settings}>
@@ -61,7 +61,7 @@ const Testimonials = () => {
             />
           ))}
         </Slider>
-      </div>
+      </Container>
     </div>
   );
 };
