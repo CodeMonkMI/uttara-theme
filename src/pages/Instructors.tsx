@@ -7,7 +7,7 @@ const Instructors = () => {
       <Breadcrumb title='Instructors' />
       <div className='container'>
         <div className='my-24'>
-          <Persons />
+          <Persons isHome={false} />
         </div>
       </div>
     </>

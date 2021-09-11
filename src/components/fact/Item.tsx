@@ -1,5 +1,11 @@
 import React from 'react';
-const Item = ({ number, value }) => {
+
+interface ItemProps {
+  number: number | string;
+  value: string;
+}
+
+const Item: React.FC<ItemProps> = ({ number, value }) => {
   return (
     <div className='w-full sm:w-1/2 md:w-1/4 p-3 box-border'>
       <div className='bg-white py-5 border-t border-solid border-gray-300 rounded-md'>

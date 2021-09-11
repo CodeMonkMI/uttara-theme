@@ -1,10 +1,16 @@
 import { Container } from 'components/styles/Container.styled';
 import { SubTitle, Title } from 'components/styles/Section.styled';
 import React from 'react';
-import { generate as shortid } from 'shortid';
+// import { generate as shortid } from 'shortid';
 import Item from './Item';
-const Fact = () => {
-  const items = [
+const shortid = () => Math.ceil(Math.random() * 9999);
+interface ItemProps {
+  number: number | string;
+  value: string;
+  id: number | string;
+}
+const Fact: React.FC = () => {
+  const items: ItemProps[] = [
     {
       id: shortid(),
       value: 'Downloaded',
@@ -32,7 +38,7 @@ const Fact = () => {
         <SubTitle align='center'>Funfact</SubTitle>
         <Title align='center'>Strength in Numbers</Title>
         <div className='flex flex-wrap'>
-          {items.map((item) => (
+          {items.map((item: ItemProps) => (
             <Item key={item.id} value={item.value} number={item.number} />
           ))}
         </div>

@@ -1,6 +1,12 @@
 import React from 'react';
 
-const Box = ({ color, text, icon }) => {
+interface BoxProps {
+  color: string;
+  icon: string;
+  text: string;
+}
+
+const Box: React.FC<BoxProps> = ({ color, text, icon }) => {
   return (
     <div
       className='mx-3 py-10 box-border text-center rounded-md'

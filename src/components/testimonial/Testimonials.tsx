@@ -5,7 +5,16 @@ import React from 'react';
 import Slider from 'react-slick';
 import shortid from 'shortid';
 import Testimonial from './Testimonial';
-const Testimonials = () => {
+
+interface ListItemProperty {
+  id: string | number;
+  image: string;
+  text: string;
+  post: string;
+  name: string;
+}
+
+const Testimonials: React.FC = () => {
   const settings = {
     dots: true,
     infinite: true,
@@ -22,7 +31,7 @@ const Testimonials = () => {
       },
     ],
   };
-  const list = [
+  const list: ListItemProperty[] = [
     {
       id: shortid(),
       image: img,
@@ -51,7 +60,7 @@ const Testimonials = () => {
         <SubTitle align='center'>Testimonials</SubTitle>
         <Title align='center'>Student Community Feedback</Title>
         <Slider {...settings}>
-          {list.map((item) => (
+          {list.map((item: ListItemProperty) => (
             <Testimonial
               key={item.id}
               image={item.image}

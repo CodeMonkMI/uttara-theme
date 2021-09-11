@@ -5,10 +5,19 @@ import img4 from 'images/why/4.png';
 import img5 from 'images/why/5.png';
 import img6 from 'images/why/6.png';
 import React from 'react';
-import { generate as shortid } from 'shortid';
+import shortid from 'shortid';
 import Item from './Item';
+
+interface ItemProperty {
+  id: number | string;
+  title: string;
+  text: string;
+  url: string;
+  icon: string;
+}
+
 const Items = () => {
-  const items = [
+  const items: ItemProperty[] = [
     {
       id: shortid(),
       title: 'Top Paid Faculty',
@@ -54,7 +63,7 @@ const Items = () => {
   ];
   return (
     <div className='flex flex-wrap'>
-      {items.map((item) => (
+      {items.map((item: ItemProperty) => (
         <div className='w-full sm:w-1/2 md:w-1/3' key={item.id}>
           <Item
             text={item.text}

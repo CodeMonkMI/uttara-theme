@@ -1,7 +1,7 @@
-import React from 'react';
+import React, { FormEvent } from 'react';
 
-const ContactForm = () => {
-  const submitHandler = (event) => {
+const ContactForm: React.FC = () => {
+  const submitHandler = (event: FormEvent) => {
     event.preventDefault();
     alert('Thank you');
   };
@@ -32,8 +32,8 @@ const ContactForm = () => {
 
         <div className='w-full mt-3 mb-4'>
           <textarea
-            cols='30'
-            rows='10'
+            cols={30}
+            rows={10}
             className='input-control'
             placeholder='Message'
           ></textarea>

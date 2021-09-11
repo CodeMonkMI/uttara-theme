@@ -1,5 +1,11 @@
 import React from 'react';
-const Item = ({ icon, title, text, url }) => {
+interface ItemProperty {
+  title: string;
+  text: string;
+  url: string;
+  icon: string;
+}
+const Item: React.FC<ItemProperty> = ({ icon, title, text, url }) => {
   return (
     <div className='w-full box-border p-3'>
       <div className='border group shadow-md hover:bg-gray-200 transition-all duration-500 ease-in-out py-3 px-5 box-border rounded-md cursor-pointer'>

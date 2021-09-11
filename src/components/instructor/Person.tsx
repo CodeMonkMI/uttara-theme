@@ -1,9 +1,26 @@
 import React from 'react';
 const linkClasses =
   'p-2 rounded-md shadow-lg text-white transition-all duration-300 ease-in hover:bg-black';
-const Person = (props) => {
-  const { image, name, position, facebook, instagram, twitter, linkedIn } =
-    props;
+
+interface PersonProps {
+  name: string;
+  position: string;
+  image: string;
+  facebook: string;
+  instagram: string;
+  twitter: string;
+  linkedIn: string;
+}
+
+const Person: React.FC<PersonProps> = ({
+  image,
+  name,
+  position,
+  facebook,
+  instagram,
+  twitter,
+  linkedIn,
+}) => {
   return (
     <div className='w-full box-border p-3'>
       <div className='bg-blue-500 rounded-md overflow-hidden text-center cursor-pointer group'>

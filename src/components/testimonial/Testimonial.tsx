@@ -1,7 +1,20 @@
 import QuoteImg from 'images/quote.png';
 import React from 'react';
 import './Testimonial.css';
-const Testimonial = ({ image, text, name, post }) => {
+
+interface TestimonialProps {
+  image: string;
+  text: string;
+  post: string;
+  name: string;
+}
+
+const Testimonial: React.FC<TestimonialProps> = ({
+  image,
+  text,
+  name,
+  post,
+}) => {
   return (
     <div className='text-center box-border px-3 relative pb-10'>
       <div>

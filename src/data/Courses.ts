@@ -3,7 +3,19 @@ import img3 from 'images/course/3.png';
 import img1 from 'images/course/4.png';
 import shortid from 'shortid';
 
-const courses = [
+interface CourseProperty {
+  id: string;
+  image: string;
+  categories: string[];
+  title: string;
+  time: string;
+  stars: number[];
+  price: string;
+  url: string;
+  catSlug: string;
+}
+
+const courses: CourseProperty[] = [
   {
     id: shortid(),
     image: img1,

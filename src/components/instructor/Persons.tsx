@@ -5,9 +5,27 @@ import img4 from 'images/instructor/4.png';
 import img5 from 'images/instructor/5.png';
 import img6 from 'images/instructor/6.png';
 import React, { useEffect, useState } from 'react';
-import shortid from 'shortid';
+// import shortid from 'shortid';
 import Person from './Person';
-const data = [
+
+const shortid = () => Math.ceil(Math.random() * 9999);
+
+interface PersonProperty {
+  id: number | string;
+  name: string;
+  position: string;
+  image: string;
+  links: PersonSocialProperty;
+}
+
+interface PersonSocialProperty {
+  facebook: string;
+  twitter: string;
+  instagram: string;
+  linkedIn: string;
+}
+
+const data: PersonProperty[] = [
   {
     id: shortid(),
     name: 'Alexandra',
@@ -82,8 +100,8 @@ const data = [
   },
 ];
 
-const Persons = ({ isHome }) => {
-  const [persons, setPersons] = useState([]);
+const Persons: React.FC<{ isHome: boolean }> = ({ isHome }) => {
+  const [persons, setPersons] = useState<PersonProperty[]>([] as any);
 
   useEffect(() => {
     if (isHome) {
@@ -95,7 +113,7 @@ const Persons = ({ isHome }) => {
 
   return (
     <div className='flex flex-wrap'>
-      {persons.map((person) => (
+      {persons.map((person: PersonProperty) => (
         <div
           className={`w-full sm:w-1/2 ${isHome ? '  md:w-1/4' : 'md:w-1/3'} `}
           key={person.id}

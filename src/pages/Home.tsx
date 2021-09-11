@@ -9,10 +9,12 @@ import Hero from 'components/hero/Hero';
 import Instructor from 'components/instructor/Instructor';
 import Testimonials from 'components/testimonial/Testimonials';
 import Why from 'components/why/Why';
-import React from 'react';
+import React, { useEffect } from 'react';
 
 const Home: React.FC = () => {
-  // useEffect<>(() => (document.title = 'Home'), []);
+  useEffect(() => {
+    document.title = 'Home';
+  }, []);
 
   return (
     <>

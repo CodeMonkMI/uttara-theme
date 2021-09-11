@@ -1,7 +1,16 @@
 import img1 from 'images/blog/1.png';
 import img2 from 'images/blog/2.png';
 import shortid from 'shortid';
-const blogs = [
+interface BlogProperty {
+  id: string;
+  title: string;
+  text: string;
+  image: string;
+  postedBy: string;
+  url: string;
+  date: string;
+}
+const blogs: BlogProperty[] = [
   {
     id: shortid(),
     title: 'Those Other College Expenses You Are not Thinking About',

@@ -1,8 +1,10 @@
 import Background from 'images/breadcrumb/1.png';
 import React, { useEffect } from 'react';
 
-const Breadcrumb = ({ title }) => {
-  useEffect(() => (document.title = title), [title]);
+const Breadcrumb: React.FC<{ title: string }> = ({ title }) => {
+  useEffect(() => {
+    document.title = title;
+  }, [title]);
   return (
     <div
       className='bg-cover bg-center bg-no-repeat h-72 flex justify-center items-center'

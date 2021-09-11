@@ -2,7 +2,7 @@ import { Container } from 'components/styles/Container.styled';
 import { SubTitle, Title } from 'components/styles/Section.styled';
 import React from 'react';
 import Items from './Items';
-const Why = () => {
+const Why: React.FC = () => {
   return (
     <div className='py-24'>
       <Container>

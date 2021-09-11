@@ -5,9 +5,18 @@ import img3 from 'images/facility/3.png';
 import img4 from 'images/facility/4.png';
 import React from 'react';
 import Slider from 'react-slick';
-import { generate as shortId } from 'shortid';
+// import shortId  from 'shortid';
 import Box from './Box';
-const Facility = () => {
+const shortId = () => Math.ceil(Math.random() * 9999);
+
+interface ItemProperty {
+  color: string;
+  icon: string;
+  text: string;
+  id: number | string;
+}
+
+const Facility: React.FC = () => {
   const list = [
     {
       id: shortId(),
@@ -91,7 +100,7 @@ const Facility = () => {
     <div className='mt-16 mb-3 sm:my-24'>
       <Container>
         <Slider {...settings}>
-          {list.map((item) => (
+          {list.map((item: ItemProperty) => (
             <Box
               key={item.id}
               text={item.text}

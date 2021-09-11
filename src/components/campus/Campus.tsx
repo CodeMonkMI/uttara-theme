@@ -3,7 +3,7 @@ import { Container } from 'components/styles/Container.styled';
 import { Title } from 'components/styles/Section.styled';
 import Bg from 'images/campus-bg.png';
 import React from 'react';
-const Campus = () => {
+const Campus: React.FC = () => {
   return (
     <div
       className='py-24 bg-no-repeat bg-center bg-cover text-center'

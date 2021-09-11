@@ -4,7 +4,7 @@ import { Container } from 'components/styles/Container.styled';
 import { Title } from 'components/styles/Section.styled';
 import Img1 from 'images/contact-page.png';
 import React from 'react';
-const Contact = () => {
+const Contact: React.FC = () => {
   return (
     <div>
       <Breadcrumb title='Contact' />
