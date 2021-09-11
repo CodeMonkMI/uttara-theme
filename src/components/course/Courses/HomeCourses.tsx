@@ -3,10 +3,18 @@ import { SubTitle, Title } from 'components/styles/Section.styled';
 import data from 'data/Courses';
 import Bg from 'images/course/background.png';
 import React, { useEffect, useState } from 'react';
-import { generate as shortid } from 'shortid';
+import shortid from 'shortid';
+import { CourseProperty } from 'types/AllTypes';
 import MixItUp from '../MixItUp/MixItUp';
-const HomeCourses = () => {
-  const menus = [
+
+interface MenuProperty {
+  id: string | number;
+  value: string;
+  slug: string;
+}
+
+const HomeCourses: React.FC = () => {
+  const menus: MenuProperty[] = [
     {
       id: shortid(),
       value: 'All Courses',
@@ -29,9 +37,13 @@ const HomeCourses = () => {
     },
   ];
 
-  const [courses, setCourses] = useState([]);
+  const [courses, setCourses] = useState<CourseProperty[] | any>(null);
 
-  useEffect(() => setCourses(data), []);
+  useEffect(() => {
+    setAllCourseFromData();
+  }, []);
+
+  const setAllCourseFromData = () => [setCourses(data)];
 
   return (
     <div

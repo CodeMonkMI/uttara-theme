@@ -1,7 +1,24 @@
 import { OutlineButton } from 'components/styles/Buttons.styled';
 import React from 'react';
 import './CourseBox.css';
-const CourseBox = ({ image, categories, title, time, stars, price, url }) => {
+interface CourseProperty {
+  image: string;
+  categories: string[];
+  title: string;
+  time: string;
+  stars: number[];
+  price: string;
+  url: string;
+}
+const CourseBox: React.FC<CourseProperty> = ({
+  image,
+  categories,
+  title,
+  time,
+  stars,
+  price,
+  url,
+}) => {
   return (
     <div className='box-border py-2 px-5 w-full '>
       <div className='bg-white rounded-md pb-4 shadow-md overflow-hidden'>
@@ -10,7 +27,7 @@ const CourseBox = ({ image, categories, title, time, stars, price, url }) => {
           style={{ backgroundImage: `url(${image})` }}
         >
           <ul className='flex'>
-            {categories.map((cat) => (
+            {categories.map((cat: string) => (
               <li
                 className='text-white py-1 px-3 mr-1 rounded-md courseBox__starItem'
                 key={cat}
@@ -40,7 +57,7 @@ const CourseBox = ({ image, categories, title, time, stars, price, url }) => {
             <span className='bg-red-300 font-bold text-red-600 py-3 px-5 rounded-3xl text-base tracking-wide'>
               &#36;{parseFloat(price)}
             </span>
-            <OutlineButton borderSize='3' as='a' href={url}>
+            <OutlineButton borderSize={3} as='a' href={url}>
               Details
             </OutlineButton>
           </div>

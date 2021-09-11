@@ -1,24 +1,34 @@
 import { Container } from 'components/styles/Container.styled';
 import data from 'data/Courses';
 import React, { useEffect, useState } from 'react';
+import { CourseProperty } from 'types/AllTypes';
 import CourseBox from '../shared/CourseBox';
-
 const AllCourses = () => {
   const [current, setCurrent] = useState(1);
   // const [perPage, setPerPage] = useState(9); // if you want get input of item per page from user
   const perPage = 9;
-  const [allCourses, setAllCourses] = useState([]);
+  const [allCourses, setAllCourses] = useState<CourseProperty[] | any>(null);
   const [courses, setCourses] = useState([]);
-  const [totalPage, setTotalPage] = useState(1);
-  const [pagesArray, setPageArray] = useState([]);
-
-  useEffect(() => setAllCourses(data), []);
+  const [totalPage, setTotalPage] = useState<number>(1);
+  const [pagesArray, setPageArray] = useState<any[]>([]);
 
   useEffect(() => {
+    setAllCoursesFromData();
+  }, []);
+
+  const setAllCoursesFromData = () => {
+    setAllCourses(data);
+  };
+
+  useEffect(() => {
+    handlePaginationChanges(perPage, current);
+  }, [allCourses, perPage, current]);
+
+  const handlePaginationChanges = (perPage: number, current: number) => {
     const selectFrom = perPage * current - perPage;
     const newData = allCourses.slice(selectFrom, selectFrom + perPage);
     setCourses(newData);
-  }, [allCourses, perPage, current]);
+  };
 
   useEffect(() => {
     const no = allCourses.length / perPage;
@@ -37,7 +47,7 @@ const AllCourses = () => {
     <div>
       <Container>
         <div className='sm:flex flex-wrap mt-36'>
-          {courses.map((course) => (
+          {courses.map((course: CourseProperty) => (
             <div className='w-full sm:w-1/2 xl:w-1/3 2xl:h-1/4' key={course.id}>
               <CourseBox
                 image={course.image}

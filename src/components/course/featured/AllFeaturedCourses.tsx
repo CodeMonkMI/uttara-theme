@@ -6,10 +6,11 @@ import img1 from 'images/course/4.png';
 import React from 'react';
 import Slider from 'react-slick';
 import shortid from 'shortid';
+import { CourseProperty } from 'types/AllTypes';
 import CourseBox from '../shared/CourseBox';
 import './AllFeaturedCourses.css';
 const AllFeaturedCourses = () => {
-  const list = [
+  const list: CourseProperty[] = [
     {
       id: shortid(),
       image: img1,
@@ -19,6 +20,7 @@ const AllFeaturedCourses = () => {
       stars: [1, 2, 3, 4],
       price: '250.00',
       url: '/a',
+      catSlug: '',
     },
     {
       id: shortid(),
@@ -29,6 +31,7 @@ const AllFeaturedCourses = () => {
       stars: [1, 2, 3, 4],
       price: '150.00',
       url: '/a',
+      catSlug: '',
     },
     {
       id: shortid(),
@@ -39,6 +42,7 @@ const AllFeaturedCourses = () => {
       stars: [1, 2, 3, 4],
       price: '350.00',
       url: '/a',
+      catSlug: '',
     },
     {
       id: shortid(),
@@ -49,6 +53,7 @@ const AllFeaturedCourses = () => {
       stars: [1, 2, 3, 4],
       price: '250.00',
       url: '/a',
+      catSlug: '',
     },
     {
       id: shortid(),
@@ -59,6 +64,7 @@ const AllFeaturedCourses = () => {
       stars: [1, 2, 3, 4],
       price: '150.00',
       url: '/a',
+      catSlug: '',
     },
     {
       id: shortid(),
@@ -69,6 +75,7 @@ const AllFeaturedCourses = () => {
       stars: [1, 2, 3, 4],
       price: '350.00',
       url: '/a',
+      catSlug: '',
     },
   ];
   var settings = {
