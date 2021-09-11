@@ -1,6 +1,23 @@
 import React from 'react';
 import './Blog.css';
-const Blog = ({ title, image, text, postedBy, date, url }) => {
+
+interface BlogProps {
+  title: string;
+  image: string;
+  text: string;
+  postedBy: string;
+  date: string;
+  url: string;
+}
+
+const Blog: React.FC<BlogProps> = ({
+  title,
+  image,
+  text,
+  postedBy,
+  date,
+  url,
+}) => {
   return (
     <div>
       <div className='blog__wrapper font-family-poppins mb-8'>
@@ -25,5 +42,3 @@ const Blog = ({ title, image, text, postedBy, date, url }) => {
 };
 
 export default Blog;
-
-// #94949482

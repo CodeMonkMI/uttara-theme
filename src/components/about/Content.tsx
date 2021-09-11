@@ -1,7 +1,7 @@
 import { PrimaryButton } from 'components/styles/Buttons.styled';
 import { SubTitle, Title } from 'components/styles/Section.styled';
 import React from 'react';
-const Content = () => {
+const Content: React.FC<{}> = () => {
   return (
     <div className='w-full md:w-1/2 box-border pr-5 order-2 mt-5 md:mt-0 md:order-none'>
       <div>

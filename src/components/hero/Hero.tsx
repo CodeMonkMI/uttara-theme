@@ -15,7 +15,7 @@ const Hero = () => {
     slidesToShow: 1,
     slidesToScroll: 1,
     arrows: false,
-    customPaging: (i) => <span> {i + 1}</span>,
+    customPaging: (i: number) => <span> {i + 1}</span>,
   };
 
   const sliders = [

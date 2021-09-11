@@ -2,7 +2,7 @@ import { Container } from 'components/styles/Container.styled';
 import React from 'react';
 import Content from './Content';
 import Images from './Images';
-const About = () => {
+const About: React.FC<{}> = () => {
   return (
     <div className='py-20'>
       <Container>

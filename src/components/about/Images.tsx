@@ -3,7 +3,7 @@ import img2 from 'images/about/2.png';
 import img3 from 'images/about/3.png';
 import React from 'react';
 
-const Images = () => {
+const Images: React.FC<{}> = () => {
   return (
     <div className=' w-full md:w-1/2 order-1 md:order-none'>
       <div>

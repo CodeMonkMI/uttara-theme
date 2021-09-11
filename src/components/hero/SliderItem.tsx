@@ -2,7 +2,23 @@ import { SecondaryButton } from 'components/styles/Buttons.styled';
 import { HeroSubTitle, HeroTitle } from 'components/styles/Section.styled';
 import React from 'react';
 
-const SliderItem = ({ image, title, subTitle, text, button, url }) => {
+interface SliderItemProps {
+  image: any;
+  title: string;
+  subTitle: string;
+  text: string;
+  button: string;
+  url: string;
+}
+
+const SliderItem: React.FC<SliderItemProps> = ({
+  image,
+  title,
+  subTitle,
+  text,
+  button,
+  url,
+}) => {
   return (
     <div className='sm:flex justify-between items-center box-border'>
       <div className='box-border sm:w-3/5'>
