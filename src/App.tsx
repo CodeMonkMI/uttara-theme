@@ -5,7 +5,7 @@ import Contact from 'pages/Contact';
 import Courses from 'pages/Courses';
 import Home from 'pages/Home';
 import Instructors from 'pages/Instructors';
-import React from 'react';
+// import React from 'react';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 // import tailwind css
 import './tailwind/styles.css';

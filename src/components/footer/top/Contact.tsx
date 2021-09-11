@@ -1,7 +1,10 @@
-import React from 'react';
-import shortid from 'shortid';
+import React, { FC } from 'react';
+// import shortid from 'shortid';
 import SectionTitle from '../SectionTitle';
-const Contact = () => {
+
+const shortid = () => Math.round(Math.random() * 99999);
+
+const Contact: FC<{}> = () => {
   const addressItems = [
     {
       id: shortid(),
@@ -65,7 +68,10 @@ const Contact = () => {
   );
 };
 
-const AddressItem = ({ iconClass, value }) => (
+const AddressItem: FC<{ iconClass: string; value: string }> = ({
+  iconClass,
+  value,
+}) => (
   <ul className='flex mt-5 items-start justify-center flex-wrap font-family-poppins'>
     <li className='w-6 overflow-hidden text-base mt-3 inline-block'>
       <i className={iconClass}></i>
@@ -76,7 +82,10 @@ const AddressItem = ({ iconClass, value }) => (
   </ul>
 );
 
-const SocialIcon = ({ url, iconClass }) => (
+const SocialIcon: FC<{ iconClass: string; url: string }> = ({
+  url,
+  iconClass,
+}) => (
   <li className='mr-4 text-xl last:mr-0'>
     <a
       href={url}

@@ -1,10 +1,13 @@
 import { Container } from 'components/styles/Container.styled';
 import React from 'react';
-import shortid from 'shortid';
+// import shortid from 'shortid';
 import Contact from './Contact';
 import Gallery from './Gallery';
 import MenuList from './MenuList';
 const divClassNames = 'box-border px-1 text-center sm:text-left';
+
+const shortid = () => Math.round(Math.random() * 99999);
+
 const Top = () => {
   const menu1 = [
     {

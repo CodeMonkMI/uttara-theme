@@ -43,7 +43,7 @@ const NavMenu = () => {
   );
 };
 
-const Item = ({ text, url }) => (
+const Item: React.FC<{ text: string; url: string }> = ({ text, url }) => (
   <li className='mr-3 text-black transition-colors duration-500 text-base md:text-xl font-family-poppins last:mr-0'>
     <Link
       to={url}
@@ -53,5 +53,4 @@ const Item = ({ text, url }) => (
     </Link>
   </li>
 );
-
 export default NavMenu;

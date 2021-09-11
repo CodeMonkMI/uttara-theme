@@ -2,8 +2,9 @@ import img2 from 'images/course/2.png';
 import img3 from 'images/course/3.png';
 import { default as img1, default as img4 } from 'images/course/4.png';
 import React from 'react';
-import shortid from 'shortid';
+// import shortid from 'shortid';
 import SectionTitle from '../SectionTitle';
+const shortid = () => Math.round(Math.random() * 99999);
 const Gallery = () => {
   const images = [
     {
