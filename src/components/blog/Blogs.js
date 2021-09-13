@@ -3,33 +3,18 @@ import { SubTitle, Title } from 'components/styles/Section.styled';
 import data from 'data/Blogs';
 import React, { useEffect, useState } from 'react';
 import Blog from './Blog';
-interface BlogProperty {
-  id: string;
-  title: string;
-  text: string;
-  image: string;
-  postedBy: string;
-  url: string;
-  date: string;
-}
 
-const Blogs: React.FC<{ isHome: boolean }> = ({ isHome }) => {
-  const [blogs, setBlogs] = useState<BlogProperty[]>([]);
+const Blogs = ({ isHome }) => {
+  const [blogs, setBlogs] = useState([]);
   const [allBlogs, setAllBlogs] = useState([]);
 
   const [current, setCurrent] = useState(1);
   // const [perPage, setPerPage] = useState(9); // if you want get input of item per page from user
   const perPage = 6;
   const [totalPage, setTotalPage] = useState(1);
-  const [pagesArray, setPagesArray] = useState<number[]>([]);
+  const [pagesArray, setPagesArray] = useState([]);
 
-  useEffect(() => {
-    setAllBlogsFromData();
-  }, []);
-
-  const setAllBlogsFromData = () => {
-    setBlogs(data);
-  };
+  useEffect(() => setAllBlogs(data), []);
 
   useEffect(() => {
     if (!isHome) {
@@ -65,7 +50,7 @@ const Blogs: React.FC<{ isHome: boolean }> = ({ isHome }) => {
         )}
 
         <div className={`sm:flex flex-wrap`}>
-          {blogs.map((blog: BlogProperty) => (
+          {blogs.map((blog) => (
             <div
               className={`px-3 box-border box border w-full sm:w-1/2 ${
                 isHome ? 'mb-5 last:mb-0' : ''

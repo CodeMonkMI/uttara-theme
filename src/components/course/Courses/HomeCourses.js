@@ -4,17 +4,10 @@ import data from 'data/Courses';
 import Bg from 'images/course/background.png';
 import React, { useEffect, useState } from 'react';
 import shortid from 'shortid';
-import { CourseProperty } from 'types/AllTypes';
 import MixItUp from '../MixItUp/MixItUp';
 
-interface MenuProperty {
-  id: string | number;
-  value: string;
-  slug: string;
-}
-
-const HomeCourses: React.FC = () => {
-  const menus: MenuProperty[] = [
+const HomeCourses = () => {
+  const menus = [
     {
       id: shortid(),
       value: 'All Courses',
@@ -37,13 +30,9 @@ const HomeCourses: React.FC = () => {
     },
   ];
 
-  const [courses, setCourses] = useState<CourseProperty[] | any>(null);
+  const [courses, setCourses] = useState(null);
 
-  useEffect(() => {
-    setAllCourseFromData();
-  }, []);
-
-  const setAllCourseFromData = () => [setCourses(data)];
+  useEffect(() => setCourses(data), []);
 
   return (
     <div
