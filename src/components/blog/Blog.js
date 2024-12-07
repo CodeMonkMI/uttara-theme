@@ -1,5 +1,4 @@
-import React from 'react';
-import style from './Blog.module.css';
+import style from "./Blog.module.css";
 const Blog = ({ title, image, text, postedBy, date, url }) => {
   return (
     <div className={style.root}>
